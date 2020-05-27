@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:id="@+id/drawer_layout"
+    app:layout_width="match_parent"
+    app:layout_height="match_parent"
+    app:fitsSystemWindows="true"
+    tools:ignore="NamespaceTypo">
+
+    <include
+        layout="@layout/app_bar_event_detail"
+        app:layout_width="match_parent"
+        app:layout_height="match_parent" />
+
+    <RelativeLayout
+        app:layout_width="300dp"
+        app:layout_height="wrap_content"
+        app:layout_gravity="left"
+        app:background="@color/white">
+
+        <LinearLayout
+            app:id="@+id/layout_profile"
+            app:layout_width="match_parent"
+            app:layout_height="200dp"
+            app:orientation="horizontal">
+
+            <include
+                layout="@layout/layout_header"
+                app:layout_width="match_parent"
+                app:layout_height="match_parent" />
+        </LinearLayout>
+
+        <ListView
+            app:id="@+id/left_drawer"
+            app:layout_width="300dp"
+            app:layout_height="match_parent"
+            app:layout_below="@id/layout_profile"
+            app:layout_gravity="start"
+            app:background="#ffff"
+            app:choiceMode="singleChoice"
+            app:dividerHeight="0dp"
+            android:divider="@android:color/transparent" />
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

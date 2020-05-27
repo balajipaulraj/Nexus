@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:id="@+id/content_first_page"
+    app:layout_width="match_parent"
+    app:layout_height="match_parent"
+    app:layout_marginTop="0dp"
+    app:background="@color/white"
+    app:nestedScrollingEnabled="true"
+    app:orientation="vertical"
+    app:splitMotionEvents="true"
+    android:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:ignore="NamespaceTypo">
+
+
+    <LinearLayout
+        app:id="@+id/pop_lay_options"
+        app:layout_width="match_parent"
+        app:layout_height="40dp"
+        app:layout_marginLeft="10dp"
+        app:layout_marginRight="10dp"
+        app:background="@drawable/glass_back"
+        app:orientation="horizontal"
+        app:padding="8dp"
+        app:weightSum="100.0">
+
+        <TextView
+            app:id="@+id/tv_copy"
+            app:layout_width="match_parent"
+            app:layout_height="wrap_content"
+            app:layout_gravity="center"
+            app:layout_weight="25.0"
+            app:gravity="center"
+            app:text="Copy"
+            app:textColor="@color/white"
+            app:textSize="12dp" />
+
+        <TextView
+            app:id="@+id/tv_compare"
+            app:layout_width="match_parent"
+            app:layout_height="wrap_content"
+            app:layout_gravity="center"
+            app:layout_weight="25.0"
+            app:gravity="center"
+            app:text="Compare"
+            app:textColor="@color/white"
+            app:textSize="12dp" />
+
+        <TextView
+            app:id="@+id/tv_mynote"
+            app:layout_width="match_parent"
+            app:layout_height="wrap_content"
+            app:layout_gravity="center"
+            app:layout_weight="25.0"
+            app:gravity="center"
+            app:text="Notes"
+            app:textColor="@color/white"
+            app:textSize="12dp" />
+
+        <TextView
+            app:id="@+id/tv_flashcard"
+            app:layout_width="match_parent"
+            app:layout_height="wrap_content"
+            app:layout_gravity="center"
+            app:layout_weight="25.0"
+            app:gravity="center"
+            app:text="Memory Verse"
+            app:textColor="@color/white"
+            app:textSize="12dp" />
+    </LinearLayout>
+
+
+        <androidx.core.widget.NestedScrollView
+            app:id="@+id/scroll_new"
+            app:layout_width="match_parent"
+            app:layout_height="match_parent"
+            app:background="@color/transparent"
+            app:fillViewport="true"
+            app:layout_below="@+id/pop_lay_options"
+            app:layout_above="@+id/lay_nav"
+            app:scrollbarFadeDuration="10"
+            app:scrollbars="vertical"
+            app:verticalScrollbarPosition="right"
+            android:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+            <LinearLayout
+                app:id="@+id/swipe"
+                app:layout_width="match_parent"
+                app:layout_height="match_parent"
+                app:layout_above="@+id/lay_nav"
+                app:layout_below="@+id/pop_lay_options"
+                app:layout_marginTop="0dp"
+                app:background="@color/white"
+                app:orientation="vertical">
+
+                <ListView
+                    app:id="@+id/lv_content"
+                    app:layout_width="match_parent"
+                    app:layout_height="wrap_content" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    <LinearLayout
+        app:id="@+id/lay_nav"
+        app:layout_width="match_parent"
+        app:layout_height="40dp"
+        app:layout_alignParentBottom="true"
+        app:layout_gravity="bottom"
+        app:background="@color/colorPrimary"
+        app:weightSum="100.0">
+
+        <ImageButton
+            app:id="@+id/left_nav"
+            app:layout_width="wrap_content"
+            app:layout_height="wrap_content"
+            app:layout_gravity="center"
+            app:layout_weight="30.0"
+            app:background="@color/colorPrimary"
+            app:tint="@color/white"
+            app:src="@drawable/previous_icon"
+            app:visibility="visible" />
+
+        <TextView
+            app:layout_width="wrap_content"
+            app:id="@+id/tv_bookchap"
+            app:layout_height="wrap_content"
+            app:layout_weight="40.0"
+            app:paddingTop="10dp"
+            app:text="Book:Chapter"
+            app:gravity="center_vertical|center_horizontal|center"
+            app:textColor="@color/white"/>
+
+
+        <ImageButton
+            app:id="@+id/right_nav"
+            app:layout_width="wrap_content"
+            app:layout_height="wrap_content"
+            app:layout_gravity="center"
+            app:layout_weight="30.0"
+            app:background="@color/colorPrimary"
+            app:tint="@color/white"
+            app:src="@drawable/next_icon" />
+
+    </LinearLayout>
+
+</RelativeLayout>

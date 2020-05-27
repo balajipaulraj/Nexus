@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe_test"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:nestedScrollingEnabled="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.admin.bibleapp.Activity.bibleContentSelect"
+    tools:ignore="Orientation">
+
+    <ScrollView
+        android:id="@+id/scrollfull"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:nestedScrollingEnabled="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.example.admin.bibleapp.Activity.bibleContentSelect">
+
+        <RelativeLayout
+
+            android:id="@+id/activity_bible_content_select_swipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:clickable="true">
+
+
+            <LinearLayout
+                android:id="@+id/oldtest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/menu"
+                android:layout_marginTop="0dp"
+                android:orientation="vertical">
+
+                <GridView
+                    android:id="@+id/grid_old_book"
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:columnWidth="100dp"
+                    android:gravity="center"
+                    android:numColumns="6"
+                    android:padding="10dp"
+                    android:stretchMode="columnWidth"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:background="@color/colorPrimary">
+
+                    <TextView
+                        android:id="@+id/tv_old_testament"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Old Testament"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/largeTextSize"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <com.example.admin.bibleapp.MyGridView
+                    android:id="@+id/grid_chap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:columnWidth="100dp"
+                    android:gravity="center"
+                    android:numColumns="6"
+                    android:stretchMode="columnWidth"
+                    android:visibility="gone" />
+
+                <com.example.admin.bibleapp.MyGridView
+                    android:id="@+id/grid_vers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:columnWidth="100dp"
+                    android:gravity="center"
+                    android:numColumns="6"
+                    android:stretchMode="columnWidth"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/oldtest"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <GridView
+                    android:id="@+id/grid_new_book"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:columnWidth="100dp"
+                    android:gravity="center"
+                    android:numColumns="6"
+                    android:padding="10dp"
+                    android:stretchMode="columnWidth" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorPrimary">
+
+                    <TextView
+                        android:id="@+id/tv_newtestament"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="New Testament"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/largeTextSize"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:weightSum="100">
+
+                    <TextView
+                        android:id="@+id/tvBook"
+                        android:layout_width="@dimen/pop_header_width"
+                        android:layout_height="@dimen/pop_header_height"
+                        android:layout_marginTop="@dimen/pop_margin_top"
+                        android:layout_weight="20"
+                        android:background="@drawable/boreder_style"
+                        android:gravity="center"
+                        android:padding="@dimen/pop_padding"
+                        android:text="Book Gen"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/vsmallTextSize"
+                        android:textStyle="bold"
+                        android:typeface="serif"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/tvChapter"
+                        android:layout_width="@dimen/pop_header_width"
+                        android:layout_height="@dimen/pop_header_height"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="20"
+                        android:background="@drawable/boreder_style"
+                        android:gravity="center"
+                        android:padding="@dimen/pop_padding"
+                        android:text="Chapter 01"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/vsmallTextSize"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/tvVerse"
+                        android:layout_width="@dimen/pop_header_width"
+                        android:layout_height="@dimen/pop_header_height"
+                        android:layout_marginTop="@dimen/pop_padding"
+                        android:layout_weight="20.0"
+                        android:background="@drawable/boreder_style"
+                        android:gravity="center"
+                        android:padding="@dimen/pop_padding"
+                        android:text="Verse1"
+                        android:textColor="@color/white"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="20" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="20" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lay"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="10"
+                        android:orientation="horizontal"
+                        android:weightSum="100.0">
+
+                        <TextView
+                            android:id="@+id/back"
+                            android:layout_width="@dimen/pop_header_width"
+                            android:layout_height="@dimen/pop_header_height"
+                            android:layout_weight="50.0"
+                            android:background="@drawable/boreder_style"
+                            android:gravity="center"
+                            android:padding="@dimen/pop_padding"
+                            android:text="Back"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/vsmallTextSize"
+                            android:textStyle="bold"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/bookback"
+                            android:layout_width="@dimen/pop_header_width"
+                            android:layout_height="@dimen/pop_header_height"
+                            android:background="@drawable/boreder_style"
+                            android:gravity="center"
+                            android:padding="@dimen/pop_padding"
+                            android:text="Back"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/chapback"
+                            android:layout_width="@dimen/pop_header_width"
+                            android:layout_height="@dimen/pop_header_height"
+                            android:background="@drawable/boreder_style"
+                            android:gravity="center"
+                            android:padding="@dimen/pop_padding"
+                            android:text="Back"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="20"
+                        android:gravity="right">
+
+                        <TextView
+                            android:id="@+id/bookgo"
+                            android:layout_width="@dimen/pop_header_width"
+                            android:layout_height="@dimen/pop_header_height"
+                            android:background="@drawable/boreder_style"
+                            android:gravity="center"
+                            android:padding="@dimen/vsmallTextSize"
+                            android:text="Go"
+                            android:textColor="@color/white"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/chapgo"
+                            android:layout_width="@dimen/pop_header_width"
+                            android:layout_height="@dimen/pop_header_height"
+                            android:layout_gravity="center"
+                            android:background="@drawable/boreder_style"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Go"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/smallTextSize"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/versego"
+                            android:layout_width="@dimen/pop_header_width"
+                            android:layout_height="@dimen/pop_header_height"
+                            android:layout_gravity="center"
+                            android:background="@drawable/boreder_style"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Go"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/smallTextSize"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="60" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

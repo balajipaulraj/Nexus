@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="100.0">
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:paddingRight="10dp"
+                android:src="@drawable/bible12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="left"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="5.0"
+            android:orientation="vertical"
+            android:weightSum="100.0">
+
+            <TextView
+                android:id="@+id/planname"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:gravity="top"
+                android:text="ENTER THE BIBLE NAME "
+                android:textColor="@color/black"
+                android:textSize="@dimen/normalTextSize" />
+
+            <EditText
+                android:id="@+id/plan_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/edittext_back"
+                android:padding="10dp" />
+            <TextView
+                android:id="@+id/planpath"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="5dp"
+                android:gravity="top"
+                android:text="LOAD BIBLE FROM PATH:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normalTextSize" />
+
+            <TextView
+                android:id="@+id/note"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="230dp"
+                android:layout_marginTop="-25dp"
+                android:gravity="center_vertical"
+                android:text="Select file from SD card"
+                android:textColor="@color/thickblue"
+                android:textSize="10dp" />
+            <Button
+                android:id="@+id/btn_browse"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:background="@color/thickblue"
+                android:text="browse"
+                android:textColor="@color/white"
+                android:textSize="@dimen/normalTextSize" />
+            <EditText
+                android:id="@+id/plan_path"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/edittext_back"
+                android:padding="10dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_margin="0dp"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="50.0"
+                android:background="@color/appgreen"
+                android:text="SUBMIT"
+                android:textColor="@color/white"
+                android:textSize="@dimen/normalTextSize" />
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="50.0"
+                android:background="@color/red1"
+                android:text="CANCEL"
+                android:textColor="@color/white"
+                android:textSize="@dimen/normalTextSize" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

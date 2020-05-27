@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_plan_selection1"
+    android:layout_width="wrap_content"
+    android:background="@drawable/layout_back"
+    android:layout_margin="25dp"
+    android:elevation="8dp"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:backgroundTint="@color/colorPrimary"
+                android:orientation="horizontal"
+                android:weightSum="100.0">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="90"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/heading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="20dp"
+                        android:background="@color/colorPrimary"
+                        android:src="@drawable/appicon"
+                        android:text="CHOOSE YOUR PLAN"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/headingTextSize" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:gravity="right">
+                    <ImageView
+                        android:id="@+id/iv_close"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:clickable="true"
+                        android:padding="5dp"
+                        android:tint="@color/white"
+                        android:layout_gravity="right"
+                        android:src="@drawable/appclose" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <RadioGroup
+                android:id="@+id/rg_plan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rb_30day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="30 Day Psalm" />
+
+                <RadioButton
+                    android:id="@+id/rb_90day_kids"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="90 Day Kids Devotional" />
+
+                <RadioButton
+                    android:id="@+id/rb_90day_overview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="90 Day Overview" />
+
+                <RadioButton
+                    android:id="@+id/rb_canbibe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="Bible in a Year - Canonical" />
+
+                <RadioButton
+                    android:id="@+id/rb_hisbible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:checked="false"
+                    android:text="Bible in a Year - Historical" />
+
+                <RadioButton
+                    android:id="@+id/rb_blendbible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:checked="false"
+                    android:text="Bible in a Year - Blended" />
+
+                <RadioButton
+                    android:id="@+id/rb_mchyene"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:checked="false"
+                    android:text="MCheyne - Bible Reading Calendar" />
+
+                <RadioButton
+                    android:id="@+id/rb_chrobible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:checked="false"
+                    android:text="Bible in a Year - Chronological" />
+
+                <RadioButton
+                    android:id="@+id/rb_gideons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:checked="false"
+                    android:text="Gideons - Bible Reading Calendar" />
+
+                <RadioButton
+                    android:id="@+id/rb_michael"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:checked="false"
+                    android:text="Michael Coley - Genre " />
+
+                <RadioButton
+                    android:id="@+id/rb_newtestyear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:checked="false"
+                    android:text="New Testament in a year" />
+
+                <RadioButton
+                    android:id="@+id/rb_newtestwithpsalm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:checked="false"
+                    android:text="New Testament with Psalms and Proverbs " />
+
+                <RadioButton
+                    android:id="@+id/rb_oneyear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:checked="false"
+                    android:text="One year plan for kids" />
+
+                <RadioButton
+                    android:id="@+id/rb_twoyear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:checked="false"
+                    android:text="Two Year Reading Plan" />
+
+                <RadioButton
+                    android:id="@+id/rb_threeyear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:checked="false"
+                    android:text="Three year Guided  Tour" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="100.0">
+
+                <Button
+                    android:id="@+id/btn_select"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="50.0"
+                    android:text="SELECT"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:background="@color/colorPrimary"
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

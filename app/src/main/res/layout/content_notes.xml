@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:id="@+id/content_notes"
+    app:layout_width="match_parent"
+    app:layout_height="match_parent"
+    tools:ignore="NamespaceTypo">
+
+        <LinearLayout
+            app:layout_width="match_parent"
+            app:layout_height="match_parent"
+            app:layout_marginLeft="5dp"
+            app:layout_marginRight="5dp"
+            app:layout_marginTop="50dp"
+            app:orientation="vertical">
+
+            <LinearLayout
+                app:id="@+id/lay_title"
+                app:layout_width="match_parent"
+                app:layout_height="wrap_content"
+                app:layout_marginBottom="5dp"
+                app:orientation="horizontal"
+                app:visibility="gone"
+                app:weightSum="100.0">
+
+                <TextView
+                    app:id="@+id/tv_set_title"
+                    app:layout_width="match_parent"
+                    app:layout_height="wrap_content"
+                    app:layout_below="@+id/tv_note_time"
+                    app:layout_gravity="left"
+                    app:layout_marginLeft="5dp"
+                    app:layout_weight="40.0"
+                    app:clickable="false"
+                    app:ellipsize="end"
+                    app:maxLines="2"
+                    app:minLines="1"
+                    app:padding="2dp"
+                    app:text="Title:"
+                    app:textColor="@color/black"
+                    app:textSize="16sp" />
+
+                <TextView
+                    app:id="@+id/tv_note_time"
+                    app:layout_width="match_parent"
+                    app:layout_height="wrap_content"
+                    app:layout_margin="4dp"
+                    app:layout_marginRight="5dp"
+                    app:layout_weight="60.0"
+                    app:gravity="right"
+                    app:text="20 sep 2016"
+                    app:textColor="@color/gray_text"
+                    app:textSize="14sp" />
+            </LinearLayout>
+
+
+
+                    <EditText
+                        app:id="@+id/tv_notes_full"
+                        app:layout_width="match_parent"
+                        app:layout_height="200dp"
+                        app:layout_marginLeft="10dp"
+                        app:layout_marginTop="5dp"
+                        app:gravity="center"
+                        app:hint="Paste the Notes here"
+                        app:textColor="@color/black"
+                        app:textSize="16sp"
+                        app:visibility="visible" />
+
+            <TextView
+                app:id="@+id/add_new_notes"
+                app:layout_width="wrap_content"
+                app:layout_height="wrap_content"
+                app:layout_gravity="center"
+                app:layout_marginTop="15dp"
+                app:background="@color/ash"
+                app:gravity="center"
+                app:text="  ADD NEW  "
+                app:textColor="@color/black"
+                app:textSize="10dp"
+                app:textStyle="bold" />
+            <LinearLayout
+                app:layout_width="match_parent"
+                app:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                app:id="@+id/rv_notes"
+                app:layout_width="match_parent"
+                app:layout_height="wrap_content"
+                app:layout_marginTop="10dp" />
+            </LinearLayout>
+            <TextView
+                app:id="@+id/tv_notes_empty"
+                app:layout_width="match_parent"
+                app:layout_height="match_parent"
+                app:clickable="true"
+                app:gravity="center"
+                app:text="Notes is Empty"
+                app:textSize="20sp"
+                app:textStyle="bold" />
+
+
+        </LinearLayout>
+</RelativeLayout>

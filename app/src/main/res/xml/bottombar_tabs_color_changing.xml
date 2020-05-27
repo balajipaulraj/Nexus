@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_home"
+        icon="@drawable/home"
+        title="Recents"
+        barColorWhenSelected="@color/colorAccent" />
+    <tab
+        id="@+id/tab_read"
+        icon="@drawable/home"
+        title="Favorites"
+        barColorWhenSelected="#5D4037" />
+    <tab
+        id="@+id/tab_plans"
+        icon="@drawable/home"
+        title="Nearby"
+        barColorWhenSelected="#7B1FA2" />
+    <tab
+        id="@+id/tab_pray"
+        icon="@drawable/home"
+        title="Friends"
+        barColorWhenSelected="#FF5252" />
+    <tab
+        id="@+id/tab_menu"
+        icon="@drawable/home"
+        title="Food"
+        barColorWhenSelected="#FF9800" />
+</tabs>

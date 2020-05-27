@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res/android">
+    <item
+        app:icon="@drawable/searchbible1"
+        app:id="@+id/search"
+        app:orderInCategory="100"
+        app:title="search"
+        android:actionViewClass="android.support.v7.widget.SearchView"
+        android:showAsAction="ifRoom|collapseActionView" />
+
+</menu>

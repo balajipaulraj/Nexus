@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_width="match_parent"
+    app:layout_height="match_parent"
+    app:background="@color/white"
+    app:fitsSystemWindows="true"
+    tools:ignore="NamespaceTypo">
+
+    <ScrollView
+        app:layout_width="match_parent"
+        app:layout_height="match_parent"
+        app:layout_below="@id/toolbar"
+        android:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <include layout="@layout/content_media_detail"
+            />
+
+
+    </ScrollView>
+
+
+    <include
+        app:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+</RelativeLayout>

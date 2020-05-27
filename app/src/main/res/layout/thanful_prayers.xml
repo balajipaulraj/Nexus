@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_plan_selection1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/layout_back"
+            android:orientation="vertical">
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:background="@color/white"-->
+            <!--android:gravity="left"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:weightSum="100.0">-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/iv_close"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:clickable="true"-->
+            <!--android:src="@drawable/appclose" />-->
+            <!--</LinearLayout>-->
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/colorPrimary"
+                android:src="@drawable/appicon"
+                android:text="I AM THANKFUL FOR"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/headingTextSize" />
+
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/thankfulprayers">
+            </ListView>
+            <TextView
+                android:id="@+id/tv_list_empty"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:visibility="gone"
+                android:text="List is Empty"
+                android:textSize="@dimen/normalTextSize"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+</RelativeLayout>

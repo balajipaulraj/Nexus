@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:id="@+id/activity_recyclerviewfirstpage"
+    app:layout_height="match_parent"
+    app:layout_width="match_parent"
+    tools:ignore="NamespaceTypo">
+
+
+    <include
+        app:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        app:id="@+id/rv_recycle"
+        app:layout_below="@+id/toolbar"
+        app:layout_height="wrap_content"
+        app:layout_marginTop="0dp"
+        app:layout_width="match_parent" />
+</RelativeLayout>

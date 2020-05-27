@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_mynotes"
+            android:icon="@drawable/notes48"
+            android:title="My Notes" />
+        <item
+            android:id="@+id/nav_flashcard"
+            android:icon="@drawable/card48"
+            android:title="Memory Verse" />
+        <item
+            android:id="@+id/nav_readhistory"
+            android:icon="@drawable/bible24"
+            android:title="Reading History" />
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/baseline_search_black_48"
+            android:title="Search" />
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/settings"
+            android:title="Settings" />
+
+
+        <item
+            android:id="@+id/nav_bookmark"
+            android:icon="@drawable/baseline_book_black_18dp"
+            android:title="Bookmarks" />
+
+        <item
+            android:id="@+id/nav_sync"
+            android:icon="@drawable/cloudcomputing"
+            android:title="Sync" />
+
+        <item
+            android:id="@+id/nav_audio_bible"
+            android:icon="@drawable/speaker"
+            android:title="Audio Bible" />
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/userbig"
+            android:title="My Profile" />
+
+        <item
+        android:id="@+id/nav_church"
+        android:icon="@drawable/churchbig"
+        android:title="Church" />
+
+        <item
+            android:id="@+id/nav_livestream"
+            android:icon="@drawable/live"
+            android:title="Live" />
+
+        <item
+            android:id="@+id/nav_connect"
+            android:icon="@drawable/transfer"
+            android:title="Connect" />
+
+        <item
+            android:id="@+id/nav_missions"
+            android:icon="@drawable/prayinghands22"
+            android:title="Missions" />
+        <item
+            android:id="@+id/nav_download_bible"
+            android:icon="@drawable/download"
+            android:title="Download Bible" />
+
+        <item
+            android:id="@+id/nav_download_plan"
+            android:icon="@drawable/download"
+            android:title="Download Plan" />
+
+
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/outline_info_black_48"
+            android:title="About" />
+    </group>
+</menu>

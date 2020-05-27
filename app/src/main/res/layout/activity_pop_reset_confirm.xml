@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_pop_reset_confirm"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:elevation="8dp"
+        android:background="@drawable/layout_back"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:weightSum="100.0">
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="80.0"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="Are you sure? "
+            android:textColor="@color/black"
+            android:textSize="@dimen/largeTextSize"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:weightSum="100.0">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50.0"
+                android:gravity="center"
+                android:layout_marginBottom="15dp"
+                android:paddingRight="5dp">
+
+                <Button
+                    android:id="@+id/tv_yes"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:background="@color/colorPrimaryDark"
+                    android:gravity="center"
+                    android:text="YES"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/largeTextSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50.0"
+                android:gravity="center"
+                android:paddingLeft="0dp">
+
+                <Button
+                    android:id="@+id/tv_no"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="0dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:gravity="center"
+                    android:text="NO"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/largeTextSize" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

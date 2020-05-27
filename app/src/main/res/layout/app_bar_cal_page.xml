@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_width="match_parent"
+    app:layout_height="match_parent"
+    app:background="@color/white"
+    app:orientation="vertical"
+    app:fitsSystemWindows="true"
+    tools:ignore="NamespaceTypo">
+
+    <LinearLayout
+        app:layout_width="match_parent"
+        app:layout_height="match_parent"
+        app:layout_below="@+id/toolbar"
+        android:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.core.widget.NestedScrollView
+            app:layout_width="match_parent"
+            app:layout_height="match_parent">
+
+            <include layout="@layout/content_cal_page" />
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+  <include
+      app:id="@+id/toolbar"
+      layout="@layout/toolbar"/>
+
+    <com.roughike.bottombar.BottomBar
+        app:id="@+id/bottomBar"
+        app:layout_width="match_parent"
+        app:layout_height="50dp"
+        app:layout_gravity="bottom"
+        app:elevation="8dp"
+        android:bb_behavior="iconsOnly"
+        android:bb_inActiveTabColor="@color/black"
+        android:bb_showShadow="true"
+        app:layout_alignParentBottom="true"
+        android:bb_tabXmlResource="@xml/bottombar_tabs_five" />
+
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_back"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lay_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            android:weightSum="100.0">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_note_time"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="60.0"
+                android:editable="false"
+                android:ellipsize="end"
+                android:enabled="false"
+                android:maxLines="3"
+                android:minLines="1"
+                android:padding="2dp"
+                android:text=""
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/smallTextSize" />
+
+            <TextView
+                android:id="@+id/tv_note_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="40.0"
+                android:gravity="right"
+                android:text="20 sep 2016"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/smallTextSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lay_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/lay_title"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:visibility="visible">
+
+                <EditText
+                    android:id="@+id/edt_edit_note"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lay_desc"
+                    android:background="@color/transparent"
+                    android:enabled="false"
+                    android:hint="Paste and Edit your Notes"
+                    android:padding="5dp"
+                    android:textCursorDrawable="@null"
+                    android:textColor="@color/thickblue"
+                    android:textSize="@dimen/smallTextSize"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lay_edit"
+                android:layout_marginTop="5dp"
+                android:gravity="right">
+
+                <Button
+                    android:id="@+id/btn_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="Edit"
+                    android:textColor="#2595d1" />
+
+                <Button
+                    android:id="@+id/btn_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="save"
+                    android:textColor="#2595d1"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

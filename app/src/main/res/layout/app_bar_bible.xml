@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_width="match_parent"
+    app:layout_height="match_parent"
+    app:background="@color/white"
+    app:fitsSystemWindows="true"
+    app:orientation="horizontal"
+    tools:ignore="NamespaceTypo">
+
+    <LinearLayout
+        app:id="@+id/swipe"
+        app:layout_width="match_parent"
+        app:layout_height="wrap_content"
+        app:layout_above="@id/bottomBar"
+        app:layout_below="@id/tab_book"
+        android:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <!--<androidx.core.widget.NestedScrollView-->
+        <!--app:layout_width="match_parent"-->
+        <!--app:layout_height="wrap_content">-->
+
+        <include layout="@layout/activity_bible_content_select" />
+
+        <!--</androidx.core.widget.NestedScrollView>-->
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        app:id="@+id/tab_book"
+        app:layout_width="match_parent"
+        app:layout_height="50dp"
+        app:layout_below="@id/toolbar"
+        app:background="@color/colorPrimary"
+        android:tabIndicatorColor="@color/white"
+        android:tabMode="scrollable" />
+
+    <com.roughike.bottombar.BottomBar
+        app:id="@+id/bottomBar"
+        app:layout_width="match_parent"
+        app:layout_height="50dp"
+        app:layout_alignParentBottom="true"
+        app:elevation="8dp"
+        android:bb_behavior="iconsOnly"
+        android:bb_inActiveTabColor="@color/black"
+        android:bb_showShadow="true"
+        android:bb_tabXmlResource="@xml/bottombar_tabs_five" />
+
+    <include
+        app:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+</RelativeLayout>

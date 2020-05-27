@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:id="@+id/content_navigation"
+    app:layout_width="match_parent"
+    app:layout_height="match_parent"
+    app:background="@color/white"
+    tools:ignore="NamespaceTypo">
+
+    <LinearLayout
+        app:id="@+id/lay_date"
+        app:layout_width="match_parent"
+        app:layout_height="match_parent"
+        app:background="@color/white"
+        app:orientation="vertical"
+        app:weightSum="100.0">
+
+
+        <WebView
+            app:id="@+id/wv_content"
+            app:layout_width="wrap_content"
+            app:layout_height="wrap_content"
+            app:layout_gravity="center" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\Users\\Admin\\Downloads\\BottomBar-master\\BottomBar-master\\bottom-bar\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v11\\notification_template_big_media_custom.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\0d03b99aa96d3f804ec9c653ea314e60ff7015df\\output\\res\\layout-v11\\notification_template_big_media_custom.xml"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\Downloads\\BottomBar-master\\BottomBar-master\\bottom-bar\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v11\\notification_template_big_media_narrow_custom.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\0d03b99aa96d3f804ec9c653ea314e60ff7015df\\output\\res\\layout-v11\\notification_template_big_media_narrow_custom.xml"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\Downloads\\BottomBar-master\\BottomBar-master\\bottom-bar\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v11\\notification_template_big_media.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\0d03b99aa96d3f804ec9c653ea314e60ff7015df\\output\\res\\layout-v11\\notification_template_big_media.xml"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\Downloads\\BottomBar-master\\BottomBar-master\\bottom-bar\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v11\\notification_media_action.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\0d03b99aa96d3f804ec9c653ea314e60ff7015df\\output\\res\\layout-v11\\notification_media_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\Downloads\\BottomBar-master\\BottomBar-master\\bottom-bar\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v11\\notification_template_big_media_narrow.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\0d03b99aa96d3f804ec9c653ea314e60ff7015df\\output\\res\\layout-v11\\notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\Downloads\\BottomBar-master\\BottomBar-master\\bottom-bar\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v11\\notification_media_cancel_action.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\0d03b99aa96d3f804ec9c653ea314e60ff7015df\\output\\res\\layout-v11\\notification_media_cancel_action.xml"
+    }
+]

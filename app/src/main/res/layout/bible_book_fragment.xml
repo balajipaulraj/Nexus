@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/oldtest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/tv_old_testament"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Old Testament"
+                android:textColor="@color/black"
+                android:textSize="@dimen/largeTextSize"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/grid_old_book"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:columnWidth="100dp"
+            android:gravity="center"
+            android:numColumns="6"
+            android:padding="10dp"
+            android:stretchMode="columnWidth"
+            android:visibility="visible" />
+
+        <com.example.admin.bibleapp.MyGridView
+            android:id="@+id/grid_chap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:columnWidth="100dp"
+            android:gravity="center"
+            android:numColumns="6"
+            android:stretchMode="columnWidth"
+            android:visibility="gone" />
+
+        <com.example.admin.bibleapp.MyGridView
+            android:id="@+id/grid_vers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:columnWidth="100dp"
+            android:gravity="center"
+            android:numColumns="6"
+            android:stretchMode="columnWidth"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/oldtest"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/tv_newtestament"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Testament"
+            android:textColor="@color/black"
+            android:textSize="@dimen/largeTextSize"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/grid_new_book"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:columnWidth="100dp"
+        android:gravity="center"
+        android:numColumns="6"
+        android:padding="10dp"
+        android:stretchMode="columnWidth" />
+    </LinearLayout>
+
+</RelativeLayout>

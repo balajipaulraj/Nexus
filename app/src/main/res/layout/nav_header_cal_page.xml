@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto"
+xmlns:app="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+app:background="@drawable/bible12"
+app:gravity="center"
+app:layout_height="250dp"
+app:layout_width="match_parent"
+app:orientation="vertical"
+tools:ignore="NamespaceTypo">
+
+<ImageView
+    app:id="@+id/imageView"
+    app:layout_height="wrap_content"
+    app:layout_width="wrap_content"
+    app:paddingTop="10dp" />
+
+<TextView
+    app:id="@+id/textView"
+    app:layout_height="wrap_content"
+    app:layout_width="wrap_content"
+    app:text="Bible"
+    app:textSize="30sp" />
+</LinearLayout>

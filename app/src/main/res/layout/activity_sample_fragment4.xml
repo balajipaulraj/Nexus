@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100.0">
+
+        <LinearLayout
+            android:id="@+id/lay_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/pop_lay_options" />
+        </LinearLayout>
+
+        <WebView
+            android:id="@+id/wv_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/pop_margin_top"
+            android:layout_marginTop="@dimen/pop_margin_top"
+            android:layout_weight="95.0"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+</RelativeLayout>

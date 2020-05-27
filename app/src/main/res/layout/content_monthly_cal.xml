@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    custom:id="@+id/content_monthly_cal"
+    custom:layout_width="match_parent"
+    custom:layout_height="wrap_content"
+    custom:background="@color/white"
+    tools:ignore="NamespaceTypo">
+
+    <LinearLayout
+        custom:layout_width="match_parent"
+        custom:layout_height="match_parent"
+        custom:layout_above="@+id/percent"
+        custom:layout_below="@+id/header"
+        custom:orientation="vertical"
+        custom:weightSum="100.0"
+        tools:ignore="UnknownId">
+
+        <com.example.admin.bibleapp.CalendarView
+            custom:id="@+id/calendar_view"
+            custom:layout_width="match_parent"
+            custom:layout_height="300dp"
+            custom:layout_marginLeft="15dp"
+            custom:layout_marginRight="15dp"
+            custom:layout_marginTop="50dp"
+            custom:layout_weight="20.0"
+            custom:scrollbars="vertical" />
+
+        <TextView
+            custom:id="@+id/tv_makeup_day"
+            custom:layout_width="match_parent"
+            custom:layout_height="wrap_content"
+            custom:layout_below="@+id/calendar_view"
+            custom:layout_marginTop="20dp"
+            custom:gravity="center"
+            custom:text="Makeup Day"
+            custom:textSize="30sp"
+            custom:textStyle="bold"
+            custom:visibility="gone" />
+
+        <LinearLayout
+            custom:id="@+id/layout_daily_content"
+            custom:layout_width="match_parent"
+            custom:layout_height="wrap_content"
+            custom:layout_above="@+id/percent"
+            custom:layout_below="@+id/calendar_view"
+            custom:layout_weight="10.0"
+            custom:orientation="vertical">
+
+        <LinearLayout
+            custom:layout_width="match_parent"
+            custom:layout_height="wrap_content"
+            custom:layout_marginLeft="20dp"
+            custom:layout_marginTop="10dp"
+            custom:orientation="vertical">
+
+            <LinearLayout
+                custom:id="@+id/old_layout"
+                custom:layout_width="match_parent"
+                custom:layout_height="wrap_content"
+                custom:background="@color/dailreadingbg"
+                custom:orientation="horizontal"
+                custom:weightSum="10.0">
+
+                <TextView
+                    custom:id="@+id/tv_old_test"
+                    custom:layout_width="match_parent"
+                    custom:layout_height="wrap_content"
+                    custom:layout_marginRight="60dp"
+                    custom:layout_weight="6.0"
+                    custom:paddingBottom="2dp"
+                    custom:paddingLeft="10dp"
+                    custom:paddingRight="10dp"
+                    custom:paddingTop="2dp"
+                    custom:text="DAILY READINGS"
+                    custom:textColor="@color/black"
+                    custom:textSize="@dimen/smallTextSize" />
+
+                <ImageView
+                    custom:id="@+id/iv_old_read"
+                    custom:layout_width="30dp"
+                    custom:layout_height="match_parent"
+                    custom:layout_marginRight="30dp"
+                    custom:paddingRight="10dp"
+                    custom:src="@drawable/checked"
+                    custom:textStyle="bold"
+                    custom:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                custom:id="@+id/psalm_layout"
+                custom:layout_width="match_parent"
+                custom:layout_height="wrap_content"
+                custom:background="@color/white"
+                custom:orientation="horizontal"
+                custom:weightSum="10.0">
+
+                <TextView
+                    custom:id="@+id/tv_psalm"
+                    custom:layout_width="match_parent"
+                    custom:layout_height="wrap_content"
+                    custom:layout_marginRight="60dp"
+                    custom:layout_weight="6.0"
+                    custom:paddingBottom="2dp"
+                    custom:paddingLeft="10dp"
+                    custom:paddingRight="10dp"
+                    custom:paddingTop="2dp"
+                    custom:text="DAILY READINGS"
+                    custom:textColor="@color/black"
+                    custom:textSize="@dimen/smallTextSize" />
+
+                <ImageView
+                    custom:id="@+id/iv_psalm_read"
+                    custom:layout_width="30dp"
+                    custom:layout_height="match_parent"
+                    custom:layout_marginRight="30dp"
+                    custom:paddingRight="10dp"
+                    custom:src="@drawable/checked"
+                    custom:textStyle="bold"
+                    custom:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                custom:id="@+id/new_layout"
+                custom:layout_width="match_parent"
+                custom:layout_height="wrap_content"
+                custom:background="@color/dailreadingbg"
+                custom:orientation="horizontal"
+                custom:visibility="visible"
+                custom:weightSum="10.0">
+
+                <TextView
+                    custom:id="@+id/tv_new_test"
+                    custom:layout_width="match_parent"
+                    custom:layout_height="wrap_content"
+                    custom:layout_marginRight="60dp"
+                    custom:layout_weight="6.0"
+                    custom:paddingBottom="2dp"
+                    custom:paddingLeft="10dp"
+                    custom:paddingRight="10dp"
+                    custom:paddingTop="2dp"
+                    custom:text="DAILY READINGS"
+                    custom:textColor="@color/black"
+                    custom:textSize="15dp"
+                    custom:visibility="visible" />
+
+                <ImageView
+                    custom:id="@+id/iv_new_read"
+                    custom:layout_width="30dp"
+                    custom:layout_height="match_parent"
+                    custom:layout_marginRight="30dp"
+                    custom:paddingRight="10dp"
+                    custom:src="@drawable/checked"
+                    custom:textStyle="bold"
+                    custom:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                custom:id="@+id/fourth_layout"
+                custom:layout_width="match_parent"
+                custom:layout_height="wrap_content"
+                custom:background="@color/white"
+                custom:orientation="horizontal"
+                custom:weightSum="10.0">
+
+                <TextView
+                    custom:id="@+id/tv_fourth_test"
+                    custom:layout_width="match_parent"
+                    custom:layout_height="wrap_content"
+                    custom:layout_marginRight="60dp"
+                    custom:layout_weight="6.0"
+                    custom:paddingBottom="2dp"
+                    custom:paddingLeft="10dp"
+                    custom:paddingRight="10dp"
+                    custom:paddingTop="2dp"
+                    custom:text="DAILY READINGS"
+                    custom:textColor="@color/black"
+                    custom:textSize="@dimen/smallTextSize" />
+
+                <ImageView
+                    custom:id="@+id/iv_fourth_read"
+                    custom:layout_width="30dp"
+                    custom:layout_height="match_parent"
+                    custom:layout_marginRight="30dp"
+                    custom:paddingRight="10dp"
+                    custom:src="@drawable/checked"
+                    custom:textStyle="bold"
+                    custom:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        custom:id="@+id/percent"
+        custom:layout_width="match_parent"
+        custom:layout_height="wrap_content"
+        custom:layout_above="@+id/tv_incomplete">
+
+        <TextView
+            custom:id="@+id/dailyreadingpercent"
+            custom:layout_width="match_parent"
+            custom:layout_height="wrap_content"
+            custom:layout_gravity="center"
+            custom:gravity="center"
+            custom:text="You've read 0% of the daily reading"
+            custom:textSize="@dimen/normalTextSize" />
+    </LinearLayout>
+
+    <TextView
+        custom:id="@+id/tv_incomplete"
+        custom:layout_width="match_parent"
+        custom:layout_height="50dp"
+        custom:layout_alignParentBottom="true"
+        custom:layout_marginTop="5dp"
+        custom:background="#d2d3d5"
+        custom:gravity="center"
+        custom:text="INCOMPLETE"
+        custom:textColor="@color/white"
+        custom:textSize="@dimen/largeTextSize"
+        custom:textStyle="bold" />
+</RelativeLayout>

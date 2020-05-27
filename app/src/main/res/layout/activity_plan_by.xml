@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_plan_by"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="100.0">
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:src="@drawable/appicon"
+            android:text="CHOOSE YOUR SELECTION"
+            android:textColor="@color/white"
+            android:layout_weight="90"
+            android:textSize="@dimen/headingTextSize" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:clickable="true"
+            android:padding="5dp"
+            android:tint="@color/white"
+            android:layout_weight="10"
+            android:src="@drawable/appclose" />
+    </LinearLayout>
+
+
+
+    <RadioGroup
+        android:id="@+id/rg_bible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:paddingLeft="20dp"
+        android:orientation="horizontal"
+        android:weightSum="100.0">
+
+        <RadioButton
+            android:id="@+id/rb_bydate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50.0"
+            android:checked="true"
+            android:gravity="center"
+            android:text="By Date" />
+
+        <RadioButton
+            android:id="@+id/rb_byday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50.0"
+            android:checked="false"
+            android:gravity="center"
+            android:text="By Day" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="100.0">
+
+        <Button
+            android:id="@+id/btn_select"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_weight="50.0"
+            android:background="@color/colorPrimaryDark"
+            android:text="SELECT"
+            android:elevation="4dp"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </LinearLayout>
+</LinearLayout></RelativeLayout>

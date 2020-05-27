@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:background="@color/white"
+    app:id="@+id/content_bible"
+    app:layout_height="match_parent"
+    app:layout_width="match_parent"
+    tools:ignore="NamespaceTypo">
+
+    <LinearLayout
+        app:background="@color/white"
+        app:id="@+id/lay_date"
+        app:layout_height="match_parent"
+        app:layout_width="match_parent"
+        app:orientation="vertical"
+        app:layout_marginTop="0dp"
+        app:weightSum="100.0">
+
+    <LinearLayout
+        app:layout_height="wrap_content"
+        app:layout_width="match_parent">
+
+        <include
+            app:visibility="gone"
+            layout="@layout/pop_lay_options" />
+    </LinearLayout>
+
+    <WebView
+        app:id="@+id/wv_content"
+        app:layout_gravity="center"
+        app:layout_height="wrap_content"
+        app:layout_width="wrap_content" />
+
+    <WebView
+        app:id="@+id/wv_content1"
+        app:layout_gravity="center"
+        app:layout_height="wrap_content"
+        app:layout_width="wrap_content" />
+</LinearLayout></RelativeLayout>

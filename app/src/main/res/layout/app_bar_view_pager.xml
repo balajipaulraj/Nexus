@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:background="@color/white"
+    app:fitsSystemWindows="true"
+    app:orientation="vertical"
+    app:layout_marginTop="0dp"
+    app:layout_height="match_parent"
+    app:layout_width="match_parent"
+    tools:ignore="NamespaceTypo">
+
+    <include
+        app:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <include
+        layout="@layout/content_view_pager"
+        app:layout_height="match_parent"
+        app:layout_width="match_parent"
+        app:layout_below="@id/toolbar"/>
+
+</RelativeLayout>

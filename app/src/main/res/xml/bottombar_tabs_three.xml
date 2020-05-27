@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_home"
+        icon="@drawable/baseline_home_black_18dp"
+        title="Home" />
+    <tab
+        id="@+id/tab_read"
+        icon="@drawable/baseline_book_black_18dp"
+        title="Read" />
+    <tab
+        id="@+id/tab_plans"
+        icon="@drawable/baseline_calendar_today_black_18dp"
+        title="Plans" />
+</tabs>

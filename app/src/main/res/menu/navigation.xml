@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/navigation_home"
+        android:title="@string/Home"
+        android:icon="@drawable/newhome"
+       />
+    <item
+        android:title="@string/Read"
+        android:id="@+id/navigation_read"
+        android:icon="@drawable/newread"
+        />
+    <item
+        android:title=" "
+        android:id="@+id/navigation_plans"
+        android:icon="@drawable/baseline_calendar_today_black_18dp"
+        />
+    <item
+        android:title=" "
+        android:id="@+id/navigation_pray"
+        android:icon="@drawable/praysmall"
+
+        />
+    <item
+        android:title=" "
+        android:id="@+id/navigation_menu"
+        android:icon="@drawable/menusmall"
+        />
+    </group>
+</menu>

@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:id="@+id/content_cal_page"
+    app:layout_width="match_parent"
+    app:layout_height="match_parent"
+    app:background="@color/white"
+    tools:ignore="NamespaceTypo">
+
+
+    <LinearLayout
+        app:id="@+id/box11"
+        app:layout_width="match_parent"
+        app:layout_height="wrap_content"
+        app:orientation="vertical">
+
+        <LinearLayout
+            app:id="@+id/date"
+            app:layout_width="match_parent"
+            app:layout_height="wrap_content"
+            app:orientation="horizontal"
+            app:weightSum="100">
+
+            <LinearLayout
+                app:id="@+id/lay_date"
+                app:layout_width="match_parent"
+                app:layout_height="wrap_content"
+                app:layout_gravity="center"
+                app:layout_marginLeft="@dimen/pop_margin_left"
+                app:layout_marginRight="@dimen/pop_margin_left"
+                app:layout_weight="50"
+                app:background="@color/white"
+                app:orientation="horizontal">
+
+                <TextView
+                    app:id="@+id/iv_current_date"
+                    app:layout_width="match_parent"
+                    app:layout_height="wrap_content"
+                    app:layout_gravity="center"
+                    app:layout_weight="50"
+                    app:gravity="right"
+                    app:text="JAN"
+                    app:textColor="@color/gray_text"
+                    app:textSize="40dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                app:layout_width="match_parent"
+                app:layout_height="wrap_content"
+                app:layout_weight="50">
+
+                <TextView
+                    app:id="@+id/tv_current_date"
+                    app:layout_width="wrap_content"
+                    app:layout_height="wrap_content"
+                    app:text="31"
+                    app:textColor="@color/black"
+                    app:textSize="40dp"
+                    app:textStyle="bold" />
+
+                <androidx.legacy.widget.Space
+                    app:layout_width="5dp"
+                    app:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            app:id="@+id/box1"
+            app:layout_width="match_parent"
+            app:layout_height="wrap_content"
+            app:layout_gravity="center"
+            app:background="@drawable/layout_back"
+            app:elevation="8dp"
+            app:orientation="vertical">
+
+            <LinearLayout
+                app:id="@+id/verse_lay"
+                app:layout_width="match_parent"
+                app:layout_height="wrap_content"
+                app:layout_marginLeft="10dp"
+                app:layout_marginRight="10dp"
+                app:background="@drawable/layout_back"
+                app:elevation="8dp"
+                app:orientation="vertical">
+
+                <LinearLayout
+                    app:id="@+id/lay_vod"
+                    app:layout_width="match_parent"
+                    app:layout_height="wrap_content"
+                    app:background="@drawable/layout_back"
+                    app:orientation="vertical">
+
+                    <LinearLayout
+                        app:layout_width="match_parent"
+                        app:layout_height="match_parent"
+                        app:layout_below="@+id/daily_readings">
+
+                        <TextView
+                            app:id="@+id/verse_of_the_day"
+                            app:layout_width="match_parent"
+                            app:layout_height="wrap_content"
+                            app:layout_below="@+id/lay_date"
+                            app:background="@color/white"
+                            app:fontFamily="monospace"
+                            app:gravity="center"
+                            app:text="VERSE OF THE DAY"
+                            app:textSize="20dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        app:layout_width="match_parent"
+                        app:layout_height="wrap_content"
+                        app:orientation="vertical">
+
+                        <TextView
+                            app:id="@+id/titlevod"
+                            app:layout_width="match_parent"
+                            app:layout_height="wrap_content"
+                            app:gravity="center"
+                            app:padding="5dp"
+                            app:text="Verse ID"
+                            app:textSize="12dp"
+                            app:textStyle="bold" />
+
+                        <TextView
+                            app:id="@+id/verseoftheday"
+                            app:layout_width="match_parent"
+                            app:layout_height="wrap_content"
+                            app:gravity="center"
+                            app:padding="5dp"
+                            app:text="Verse"
+                            app:textColor="@color/black"
+                            app:textSize="15dp" />
+
+                        <TextView
+                            app:id="@+id/power"
+                            app:layout_width="match_parent"
+                            app:layout_height="wrap_content"
+                            app:gravity="center"
+                            app:padding="5dp"
+                            app:text="Powered by"
+                            app:textColor="@color/thickblue"
+                            app:textSize="12dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                app:id="@+id/daily_lay"
+                app:layout_width="match_parent"
+                app:layout_height="wrap_content"
+                app:layout_above="@+id/tv_incomplete"
+                app:layout_below="@+id/verse_lay"
+                app:layout_gravity="center"
+                app:layout_marginLeft="10dp"
+                app:layout_marginRight="10dp"
+                app:background="@drawable/layout_back"
+                app:elevation="8dp"
+                app:orientation="vertical">
+
+                <LinearLayout
+                    app:layout_width="match_parent"
+                    app:layout_height="wrap_content"
+                    app:background="@color/white"
+                    app:orientation="horizontal">
+
+                    <LinearLayout
+                        app:layout_width="match_parent"
+                        app:layout_height="match_parent"
+                        app:layout_below="@+id/daily_readings"
+                        app:gravity="center"
+                        app:orientation="vertical">
+
+                        <TextView
+                            app:id="@+id/daily_readings"
+                            app:layout_width="match_parent"
+                            app:layout_height="wrap_content"
+                            app:layout_below="@+id/lay_date"
+                            app:layout_gravity="center"
+                            app:layout_marginRight="5dp"
+                            app:background="@color/white"
+                            app:fontFamily="monospace"
+                            app:gravity="center"
+                            app:text="DAILY READINGS"
+                            app:textSize="20dp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    app:id="@+id/daily"
+                    app:layout_width="match_parent"
+                    app:layout_height="wrap_content"
+                    app:gravity="center"
+                    app:orientation="vertical">
+
+                    <LinearLayout
+                        app:id="@+id/layout_daily_content"
+                        app:layout_width="match_parent"
+                        app:layout_height="wrap_content"
+                        app:background="@color/white"
+                        app:gravity="center"
+                        app:orientation="vertical"
+                        app:paddingRight="10dp">
+
+                        <LinearLayout
+                            app:id="@+id/old_layout"
+                            app:layout_width="match_parent"
+                            app:layout_height="wrap_content"
+                            app:layout_marginLeft="10dp"
+                            app:background="@color/dailreadingbg"
+                            app:orientation="horizontal">
+
+
+                            <ImageView
+                                app:id="@+id/iv_old_read"
+                                app:layout_width="wrap_content"
+                                app:layout_height="match_parent"
+                                app:paddingLeft="10dp"
+                                app:src="@drawable/checked"
+                                app:textStyle="bold"
+                                app:visibility="visible" />
+
+                            <TextView
+                                app:id="@+id/tv_old_testa"
+                                app:layout_width="match_parent"
+                                app:layout_height="wrap_content"
+                                app:paddingLeft="10dp"
+                                app:paddingTop="2dp"
+                                app:paddingRight="10dp"
+                                app:paddingBottom="2dp"
+                                app:text="DAILY READINGS"
+                                app:textColor="@color/black"
+                                app:textSize="@dimen/smallTextSize"
+                                app:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            app:id="@+id/psalm_layout"
+                            app:layout_width="match_parent"
+                            app:layout_height="wrap_content"
+                            app:layout_marginLeft="10dp"
+                            app:layout_marginTop="5dp"
+                            app:background="@color/white"
+                            app:orientation="horizontal">
+
+                            <ImageView
+                                app:id="@+id/iv_psalm_read"
+                                app:layout_width="wrap_content"
+                                app:layout_height="match_parent"
+                                app:gravity="right"
+                                app:paddingLeft="10dp"
+                                app:src="@drawable/checked"
+                                app:textStyle="bold"
+                                app:visibility="visible" />
+
+                            <TextView
+                                app:id="@+id/tv_psalm"
+                                app:layout_width="match_parent"
+                                app:layout_height="wrap_content"
+                                app:paddingLeft="10dp"
+                                app:paddingTop="2dp"
+                                app:paddingRight="10dp"
+                                app:paddingBottom="2dp"
+                                app:text="DAILY READINGS"
+                                app:textColor="@color/black"
+                                app:textSize="@dimen/smallTextSize"
+                                app:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            app:id="@+id/new_layout"
+                            app:layout_width="match_parent"
+                            app:layout_height="wrap_content"
+                            app:layout_marginLeft="10dp"
+                            app:layout_marginTop="5dp"
+                            app:background="@color/dailreadingbg"
+                            app:orientation="horizontal">
+
+                            <ImageView
+                                app:id="@+id/iv_new_read"
+                                app:layout_width="wrap_content"
+                                app:layout_height="match_parent"
+                                app:paddingLeft="10dp"
+                                app:src="@drawable/checked"
+                                app:textStyle="bold"
+                                app:visibility="visible" />
+
+                            <TextView
+                                app:id="@+id/tv_new_testa"
+                                app:layout_width="match_parent"
+                                app:layout_height="wrap_content"
+                                app:paddingLeft="10dp"
+                                app:paddingTop="2dp"
+                                app:paddingRight="10dp"
+                                app:paddingBottom="2dp"
+                                app:text="DAILY READINGS"
+                                app:textColor="@color/black"
+                                app:textSize="@dimen/smallTextSize"
+                                app:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            app:id="@+id/fourth_layout"
+                            app:layout_width="match_parent"
+                            app:layout_height="wrap_content"
+                            app:layout_marginLeft="10dp"
+                            app:layout_marginTop="5dp"
+                            app:background="@color/white"
+                            app:orientation="horizontal">
+
+                            <ImageView
+                                app:id="@+id/iv_fourth_read"
+                                app:layout_width="wrap_content"
+                                app:layout_height="match_parent"
+                                app:layout_gravity="right"
+                                app:paddingLeft="10dp"
+                                app:src="@drawable/checked"
+                                app:textStyle="bold"
+                                app:visibility="visible" />
+
+                            <TextView
+                                app:id="@+id/tv_fourth_testa"
+                                app:layout_width="match_parent"
+                                app:layout_height="wrap_content"
+                                app:paddingLeft="10dp"
+                                app:paddingTop="2dp"
+                                app:paddingRight="10dp"
+                                app:paddingBottom="2dp"
+                                app:text="DAILY READINGS"
+                                app:textColor="@color/black"
+                                app:textSize="@dimen/smallTextSize"
+                                app:textStyle="bold" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        app:id="@+id/tv_makeup_day"
+                        app:layout_width="match_parent"
+                        app:layout_height="wrap_content"
+                        app:layout_marginTop="50dp"
+                        app:gravity="center"
+                        app:text="Makeup Day"
+                        app:textColor="@color/black"
+                        app:textSize="30sp"
+                        app:textStyle="bold"
+                        app:visibility="gone" />
+                </LinearLayout>
+
+
+                <androidx.legacy.widget.Space
+                    app:layout_width="match_parent"
+                    app:layout_height="10dp" />
+
+                <androidx.legacy.widget.Space
+                    app:layout_width="match_parent"
+                    app:layout_height="10dp" />
+            </LinearLayout>
+
+            <androidx.legacy.widget.Space
+                app:layout_width="match_parent"
+                app:layout_height="10dp" />
+
+            <androidx.legacy.widget.Space
+                app:layout_width="match_parent"
+                app:layout_height="10dp" />
+
+            <androidx.legacy.widget.Space
+                app:layout_width="match_parent"
+                app:layout_height="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            app:layout_width="match_parent"
+            app:layout_height="match_parent"
+            app:layout_gravity="bottom"
+            app:background="@color/white"
+            app:gravity="bottom">
+
+            <TextView
+                app:id="@+id/tv_incomplete"
+                app:layout_width="match_parent"
+                app:layout_height="50dp"
+                app:layout_gravity="bottom"
+                app:background="#d2d3d5"
+                app:gravity="center"
+                app:text="INCOMPLETE"
+                app:textColor="@color/white"
+                app:textSize="@dimen/largeTextSize"
+                app:textStyle="bold"
+                app:visibility="gone" />
+        </LinearLayout>
+
+
+        <!--<androidx.legacy.widget.Space-->
+        <!--app:layout_width="match_parent"-->
+        <!--app:layout_height="10dp" />-->
+        <androidx.legacy.widget.Space
+            app:layout_width="match_parent"
+            app:layout_height="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        app:id="@+id/pr"
+        app:layout_width="match_parent"
+        app:layout_height="wrap_content"
+        app:layout_below="@+id/box11"
+        app:layout_alignParentBottom="true"
+        app:orientation="vertical">
+
+        <LinearLayout
+            app:id="@+id/lay_per"
+            app:layout_width="match_parent"
+            app:layout_height="wrap_content"
+            app:layout_marginLeft="10dp"
+            app:layout_marginRight="10dp"
+            app:gravity="center"
+            app:orientation="vertical">
+
+            <ProgressBar
+                app:id="@+id/progressBar"
+                app:layout_width="fill_parent"
+                app:layout_height="15dp"
+                app:progressDrawable="@drawable/progress" />
+
+            <TextView
+                app:id="@+id/tv_content_completed"
+                app:layout_width="match_parent"
+                app:layout_height="wrap_content"
+                app:background="@color/white"
+                app:elevation="8dp"
+                app:gravity="center"
+                app:text="You've read 0% of the Bible "
+                app:textSize="@dimen/normalTextSize" />
+
+            <androidx.legacy.widget.Space
+                app:layout_width="match_parent"
+                app:layout_height="10dp" />
+
+
+            <androidx.legacy.widget.Space
+                app:layout_width="match_parent"
+                app:layout_height="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            app:id="@+id/lay_per1"
+            app:layout_width="match_parent"
+            app:layout_height="wrap_content"
+            app:layout_marginLeft="10dp"
+            app:layout_marginRight="10dp"
+            app:background="@drawable/layout_back"
+            app:orientation="vertical">
+
+            <ProgressBar
+                app:id="@+id/progressBar_dr"
+                app:layout_width="fill_parent"
+                app:layout_height="15dp"
+                app:progressDrawable="@drawable/progress" />
+
+            <TextView
+                app:id="@+id/tv_content_completed_d_r"
+                app:layout_width="match_parent"
+                app:layout_height="wrap_content"
+                app:background="@color/white"
+                app:elevation="8dp"
+                app:gravity="center"
+                app:text="You've read 0% of the Daily Reading "
+                app:textSize="@dimen/normalTextSize" />
+
+            <androidx.legacy.widget.Space
+                app:layout_width="match_parent"
+                app:layout_height="10dp" />
+
+        </LinearLayout>
+
+        <androidx.legacy.widget.Space
+            app:layout_width="match_parent"
+            app:layout_height="20dp" />
+
+        <androidx.legacy.widget.Space
+            app:layout_width="match_parent"
+            app:layout_height="10dp" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:id="@+id/activity_search_list"
+    app:layout_width="match_parent"
+    app:layout_height="match_parent"
+    app:orientation="vertical"
+    tools:ignore="NamespaceTypo">
+
+    <include
+        app:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        app:id="@+id/rv_search"
+        app:layout_width="match_parent"
+        app:layout_height="wrap_content"
+        app:layout_below="@+id/toolbar"
+        app:layout_marginTop="4dp" />
+
+    <TextView
+        app:id="@+id/tv_no_items"
+        app:layout_width="match_parent"
+        app:layout_height="match_parent"
+        app:background="@color/white"
+        app:layout_below="@id/toolbar"
+        app:gravity="center"
+        app:text="Word not found"
+        app:textSize="@dimen/normalTextSize"
+        app:textStyle="bold" />
+</RelativeLayout>

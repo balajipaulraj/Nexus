@@ -1,0 +1,365 @@
+01 Jan,Gen 1,0,Mt 1,0,Ez 1,0,Ac 1,0
+02 Jan,Gen 2,0,Mt 2,0,Ez 2,0,Ac 2,0
+03 Jan,Gen 3,0,Mt 3,0,Ez 3,0,Ac 3,0
+04 Jan,Gen 4,0,Mt 4,0,Ez 4,0,Ac 4,0
+05 Jan,Gen 5,0,Mt 5,0,Ez 5,0,Ac 5,0
+06 Jan,Gen 6,0,Mt 6,0,Ez 6,0,Ac 6,0
+07 Jan,Gen 7,0,Mt 7,0,Ez 7,0,Ac 7,0
+08 Jan,Gen 8,0,Mt 8,0,Ez 8,0,Ac 8,0
+09 Jan,Gen 9-10,0,Mt 9,0,Ez 9,0,Ac 9,0
+10 Jan,Gen 11,0,Mt 10,0,Ez 10,0,Ac 10,0
+11 Jan,Gen 12,0,Mt 11,0,Neh 1,0,Ac 11,0
+12 Jan,Gen 13,0,Mt 12,0,Neh 2,0,Ac 12,0
+13 Jan,Gen 14,0,Mt 13,0,Neh 3,0,Ac 13,0
+14 Jan,Gen 15,0,Mt 14,0,Neh 4,0,Ac 14,0
+15 Jan,Gen 16,0,Mt 15,0,Neh 5,0,Ac 15,0
+16 Jan,Gen 17,0,Mt 16,0,Neh 6,0,Ac 16,0
+17 Jan,Gen 18,0,Mt 17,0,Neh 7,0,Ac 17,0
+18 Jan,Gen 19,0,Mt 18,0,Neh 8,0,Ac 18,0
+19 Jan,Gen 20,0,Mt 19,0,Neh 9,0,Ac 19,0
+20 Jan,Gen 21,0,Mt 20,0,Neh 10,0,Ac 20,0
+21 Jan,Gen 22,0,Mt 21,0,Neh 11,0,Ac 21,0
+22 Jan,Gen 23,0,Mt 22,0,Neh 12,0,Ac 22,0
+23 Jan,Gen 24,0,Mt 23,0,Neh 13,0,Ac 23,0
+24 Jan,Gen 25,0,Mt 24,0,Es 1,0,Ac 24,0
+25 Jan,Gen 26,0,Mt 25,0,Es 2,0,Ac 25,0
+26 Jan,Gen 27,0,Mt 26,0,Es 3,0,Ac 26,0
+27 Jan,Gen 28,0,Mt 27,0,Es 4,0,Ac 27,0
+28 Jan,Gen 29,0,Mt 28,0,Es 5,0,Ac 28,0
+29 Jan,Gen 30,0,Mk 1,0,Es 6,0,Rm 1,0
+30 Jan,Gen 31,0,Mk 2,0,Es 7,0,Rm 2,0
+31 Jan,Gen 32,0,Mk 3,0,Es 8,0,Rm 3,0
+01 Feb,Gen 33,0,Mk 4,0,Es 9-10,0,Rm 4,0
+02 Feb,Gen 34,0,Mk 5,0,Job 1,0,Rm 5,0
+03 Feb,Gen 35-36,0,Mk 6,0,Job 2,0,Rm 6,0
+04 Feb,Gen 37,0,Mk 7,0,Job 3,0,Rm 7,0
+05 Feb,Gen 38,0,Mk 8,0,Job 4,0,Rm 8,0
+06 Feb,Gen 39,0,Mk 9,0,Job 5,0,Rm 9,0
+07 Feb,Gen 40,0,Mk 10,0,Job 6,0,Rm 10,0
+08 Feb,Gen 41,0,Mk 11,0,Job 7,0,Rm 11,0
+09 Feb,Gen 42,0,Mk 12,0,Job 8,0,Rm 12,0
+10 Feb,Gen 43,0,Mk 13,0,Job 9,0,Rm 13,0
+11 Feb,Gen 44,0,Mk 14,0,Job 10,0,Rm 14,0
+12 Feb,Gen 45,0,Mk 15,0,Job 11,0,Rm 15,0
+13 Feb,Gen 46,0,Mk 16,0,Job 12,0,Rm 16,0
+14 Feb,Gen 47,0,Lk 1:1-38,0,Job 13,0,1 Co 1,0
+15 Feb,Gen 48,0,Lk 1:39-80,0,Job 14,0,1 Co 2,0
+16 Feb,Gen 49,0,Lk 2,0,Job 15,0,1 Co 3,0
+17 Feb,Gen 50,0,Lk 3,0,Job 16-17,0,1 Co 4,0
+18 Feb,Ex 1,0,Lk 4,0,Job 18,0,1 Co 5,0
+19 Feb,Ex 2,0,Lk 5,0,Job 19,0,1 Co 6,0
+20 Feb,Ex 3,0,Lk 6,0,Job 20,0,1 Co 7,0
+21 Feb,Ex 4,0,Lk 7,0,Job 21,0,1 Co 8,0
+22 Feb,Ex 5,0,Lk 8,0,Job 22,0,1 Co 9,0
+23 Feb,Ex 6,0,Lk 9,0,Job 23,0,1 Co 10,0
+24 Feb,Ex 7,0,Lk 10,0,Job 24,0,1 Co 11,0
+25 Feb,Ex 8,0,Lk 11,0,Job 25-26,0,1 Co 12,0
+26 Feb,Ex 9,0,Lk 12,0,Job 27,0,1 Co 13,0
+27 Feb,Ex 10,0,Lk 13,0,Job 28,0,1 Co 14,0
+28 Feb,Ex 11,0,Lk 14,0,Job 29,0,1 Co 15,0
+01 Mar,Ex 12,0,Lk 15,0,Job 30,0,1 Co 16,0
+02 Mar,Ex 13,0,Lk 16,0,Job 31,0,2 Co 1,0
+03 Mar,Ex 14,0,Lk 17,0,Job 32,0,2 Co 2,0
+04 Mar,Ex 15,0,Lk 18,0,Job 33,0,2 Co 3,0
+05 Mar,Ex 16,0,Lk 19,0,Job 34,0,2 Co 4,0
+06 Mar,Ex 17,0,Lk 20,0,Job 35,0,2 Co 5,0
+07 Mar,Ex 18,0,Lk 21,0,Job 36,0,2 Co 6,0
+08 Mar,Ex 19,0,Lk 22,0,Job 37,0,2 Co 7,0
+09 Mar,Ex 20,0,Lk 23,0,Job 38,0,2 Co 8,0
+10 Mar,Ex 21,0,Lk 24,0,Job 39,0,2 Co 9,0
+11 Mar,Ex 22,0,Jon 1,0,Job 40,0,2 Co 10,0
+12 Mar,Ex 23,0,Jon 2,0,Job 41,0,2 Co 11,0
+13 Mar,Ex 24,0,Jon 3,0,Job 42,0,2 Co 12,0
+14 Mar,Ex 25,0,Jon 4,0,Pr 1,0,2 Co 13,0
+15 Mar,Ex 26,0,Jon 5,0,Pr 2,0,Ga 1,0
+16 Mar,Ex 27,0,Jon 6,0,Pr 3,0,Ga 2,0
+17 Mar,Ex 28,0,Jon 7,0,Pr 4,0,Ga 3,0
+18 Mar,Ex 29,0,Jon 8,0,Pr 5,0,Ga 4,0
+19 Mar,Ex 30,0,Jon 9,0,Pr 6,0,Ga 5,0
+20 Mar,Ex 31,0,Jon 10,0,Pr 7,0,Ga 6,0
+21 Mar,Ex 32,0,Jon 11,0,Pr 8,0,Eph 1,0
+22 Mar,Ex 33,0,Jon 12,0,Pr 9,0,Eph 2,0
+23 Mar,Ex 34,0,Jon 13,0,Pr 10,0,Eph 3,0
+24 Mar,Ex 35,0,Jon 14,0,Pr 11,0,Eph 4,0
+25 Mar,Ex 36,0,Jon 15,0,Pr 12,0,Eph 5,0
+26 Mar,Ex 37,0,Jon 16,0,Pr 13,0,Eph 6,0
+27 Mar,Ex 38,0,Jon 17,0,Pr 14,0,Php 1,0
+28 Mar,Ex 39,0,Jon 18,0,Pr 15,0,Php 2,0
+29 Mar,Ex 40,0,Jon 19,0,Pr 16,0,Php 3,0
+30 Mar,Lv 1,0,Jon 20,0,Pr 17,0,Php 4,0
+31 Mar,Lv 2-3,0,Jon 21,0,Pr 18,0,Col 1,0
+01 Apr,Lv 4,0,Ps 1-2,0,Pr 19,0,Col 2,0
+02 Apr,Lv 5,0,Ps 3-4,0,Pr 20,0,Col 3,0
+03 Apr,Lv 6,0,Ps 5-6,0,Pr 21,0,Col 4,0
+04 Apr,Lv 7,0,Ps 7-8,0,Pr 22,0,1 Th 1,0
+05 Apr,Lv 8,0,Ps 9,0,Pr 23,0,1 Th 2,0
+06 Apr,Lv 9,0,Ps 10,0,Pr 24,0,1 Th 3,0
+07 Apr,Lv 10,0,Ps 11-12,0,Pr 25,0,1 Th 4,0
+08 Apr,Lv 11-12,0,Ps 13-14,0,Pr 26,0,1 Th 5,0
+09 Apr,Lv 13,0,Ps 15-16,0,Pr 27,0,2 Th 1,0
+10 Apr,Lv 14,0,Ps 17,0,Pr 28,0,2 Th 2,0
+11 Apr,Lv 15,0,Ps 18,0,Pr 29,0,2 Th 3,0
+12 Apr,Lv 16,0,Ps 19,0,Pr 30,0,1 Ti 1,0
+13 Apr,Lv 17,0,Ps 20-21,0,Pr 31,0,1 Ti 2,0
+14 Apr,Lv 18,0,Ps 22,0,Ec 1,0,1 Ti 3,0
+15 Apr,Lv 19,0,Ps 23-24,0,Ec 2,0,1 Ti 4,0
+16 Apr,Lv 20,0,Ps 25,0,Ec 3,0,1 Ti 5,0
+17 Apr,Lv 21,0,Ps 26-27,0,Ec 4,0,1 Ti 6,0
+18 Apr,Lv 22,0,Ps 28-29,0,Ec 5,0,2 Ti 1,0
+19 Apr,Lv 23,0,Ps 30,0,Ec 6,0,2 Ti 2,0
+20 Apr,Lv 24,0,Ps 31,0,Ec 7,0,2 Ti 3,0
+21 Apr,Lv 25,0,Ps 32,0,Ec 8,0,2 Ti 4,0
+22 Apr,Lv 26,0,Ps 33,0,Ec 9,0,Titus 1,0
+23 Apr,Lv 27,0,Ps 34,0,Ec 10,0,Titus 2,0
+24 Apr,Num 1,0,Ps 35,0,Ec 11,0,Titus 3,0
+25 Apr,Num 2,0,Ps 36,0,Ec 12,0,Phm 1,0
+26 Apr,Num 3,0,Ps 37,0,Sos 1,0,Heb 1,0
+27 Apr,Num 4,0,Ps 38,0,Sos 2,0,Heb 2,0
+28 Apr,Num 5,0,Ps 39,0,Sos 3,0,Heb 3,0
+29 Apr,Num 6,0,Ps 40-41,0,Sos 4,0,Heb 4,0
+30 Apr,Num 7,0,Ps 42-43,0,Sos 5,0,Heb 5,0
+01 May,Num 8,0,Ps 44,0,Sos 6,0,Heb 6,0
+02 May,Num 9,0,Ps 45,0,Sos 7,0,Heb 7,0
+03 May,Num 10,0,Ps 46-47,0,Sos 8,0,Heb 8,0
+04 May,Num 11,0,Ps 48,0,Is 1,0,Heb 9,0
+05 May,Num 12-13,0,Ps 49,0,Is 2,0,Heb 10,0
+06 May,Num 14,0,Ps 50,0,Is 3-4,0,Heb 11,0
+07 May,Num 15,0,Ps 51,0,Is 5,0,Heb 12,0
+08 May,Num 16,0,Ps 52-54,0,Is 6,0,Heb 13,0
+09 May,Num 17-18,0,Ps 55,0,Is 7,0,Jm 1,0
+10 May,Num 19,0,Ps 56-57,0,Is 8,0,Jm 2,0
+11 May,Num 20,0,Ps 58-59,0,Is 9,0,Jm 3,0
+12 May,Num 21,0,Ps 60-61,0,Is 10,0,Jm 4,0
+13 May,Num 22,0,Ps 62-63,0,Is 11-12,0,Jm 5,0
+14 May,Num 23,0,Ps 64-65,0,Is 13,0,1 Pt 1,0
+15 May,Num 24,0,Ps 66-67,0,Is 14,0,1 Pt 2,0
+16 May,Num 25,0,Ps 68,0,Is 15,0,1 Pt 3,0
+17 May,Num 26,0,Ps 69,0,Is 16,0,1 Pt 4,0
+18 May,Num 27,0,Ps 70-71,0,Is 17-18,0,1 Pt 5,0
+19 May,Num 28,0,Ps 72,0,Is 19-20,0,2 Pt 1,0
+20 May,Num 29,0,Ps 73,0,Is 21,0,2 Pt 2,0
+21 May,Num 30,0,Ps 74,0,Is 22,0,2 Pt 3,0
+22 May,Num 31,0,Ps 75-76,0,Is 23,0,1 Jn 1,0
+23 May,Num 32,0,Ps 77,0,Is 24,0,1 Jn 2,0
+24 May,Num 33,0,Ps 78:1-39,0,Is 25,0,1 Jn 3,0
+25 May,Num 34,0,Ps 78:40-72,0,Is 26,0,1 Jn 4,0
+26 May,Num 35,0,Ps 79,0,Is 27,0,1 Jn 5,0
+27 May,Num 36,0,Ps 80,0,Is 28,0,2 Jn 1,0
+28 May,Dt 1,0,Ps 81-82,0,Is 29,0,3 Jn 1,0
+29 May,Dt 2,0,Ps 83-84,0,Is 30,0,Jude 1,0
+30 May,Dt 3,0,Ps 85,0,Is 31,0,Rev 1,0
+31 May,Dt 4,0,Ps 86-87,0,Is 32,0,Rev 2,0
+01 Jun,Dt 5,0,Ps 88,0,Is 33,0,Rev 3,0
+02 Jun,Dt 6,0,Ps 89,0,Is 34,0,Rev 4,0
+03 Jun,Dt 7,0,Ps 90,0,Is 35,0,Rev 5,0
+04 Jun,Dt 8,0,Ps 91,0,Is 36,0,Rev 6,0
+05 Jun,Dt 9,0,Ps 92-93,0,Is 37,0,Rev 7,0
+06 Jun,Dt 10,0,Ps 94,0,Is 38,0,Rev 8,0
+07 Jun,Dt 11,0,Ps 95-96,0,Is 39,0,Rev 9,0
+08 Jun,Dt 12,0,Ps 97-98,0,Is 40,0,Rev 10,0
+09 Jun,Dt 13-14,0,Ps 99-101,0,Is 41,0,Rev 11,0
+10 Jun,Dt 15,0,Ps 102,0,Is 42,0,Rev 12,0
+11 Jun,Dt 16,0,Ps 103,0,Is 43,0,Rev 13,0
+12 Jun,Dt 17,0,Ps 104,0,Is 44,0,Rev 14,0
+13 Jun,Dt 18,0,Ps 105,0,Is 45,0,Rev 15,0
+14 Jun,Dt 19,0,Ps 106,0,Is 46,0,Rev 16,0
+15 Jun,Dt 20,0,Ps 107,0,Is 47,0,Rev 17,0
+16 Jun,Dt 21,0,Ps 108-109,0,Is 48,0,Rev 18,0
+17 Jun,Dt 22,0,Ps 110-111,0,Is 49,0,Rev 19,0
+18 Jun,Dt 23,0,Ps 112-113,0,Is 50,0,Rev 20,0
+19 Jun,Dt 24,0,Ps 114-115,0,Is 51,0,Rev 21,0
+20 Jun,Dt 25,0,Ps 116,0,Is 52,0,Rev 22,0
+21 Jun,Dt 26,0,Ps 117-118,0,Is 53,0,Mt 1,0
+22 Jun,Dt 27,0,Ps 119:1-24,0,Is 54,0,Mt 2,0
+23 Jun,Dt 28,0,Ps 119:25-48,0,Is 55,0,Mt 3,0
+24 Jun,Dt 29,0,Ps 119:49-72,0,Is 56,0,Mt 4,0
+25 Jun,Dt 30,0,Ps 119:73-96,0,Is 57,0,Mt 5,0
+26 Jun,Dt 31,0,Ps 119:97-120,0,Is 58,0,Mt 6,0
+27 Jun,Dt 32,0,Ps 119:121-144,0,Is 59,0,Mt 7,0
+28 Jun,Dt 33-34,0,Ps 119:145-176,0,Is 60,0,Mt 8,0
+29 Jun,Jsh 1,0,Ps 120-122,0,Is 61,0,Mt 9,0
+30 Jun,Jsh 2,0,Ps 123-125,0,Is 62,0,Mt 10,0
+01 Jul,Jsh 3,0,Ps 126-128,0,Is 63,0,Mt 11,0
+02 Jul,Jsh 4,0,Ps 129-131,0,Is 64,0,Mt 12,0
+03 Jul,Jsh 5,0,Ps 132-134,0,Is 65,0,Mt 13,0
+04 Jul,Jsh 6,0,Ps 135-136,0,Is 66,0,Mt 14,0
+05 Jul,Jsh 7,0,Ps 137-138,0,Jer 1,0,Mt 15,0
+06 Jul,Jsh 8,0,Ps 139,0,Jer 2,0,Mt 16,0
+07 Jul,Jsh 9,0,Ps 140-141,0,Jer 3,0,Mt 17,0
+08 Jul,Jsh 10,0,Ps 142-143,0,Jer 4,0,Mt 18,0
+09 Jul,Jsh 11,0,Ps 144,0,Jer 5,0,Mt 19,0
+10 Jul,Jsh 12-13,0,Ps 145,0,Jer 6,0,Mt 20,0
+11 Jul,Jsh 14-15,0,Ps 146-147,0,Jer 7,0,Mt 21,0
+12 Jul,Jsh 16-17,0,Ps 148,0,Jer 8,0,Mt 22,0
+13 Jul,Jsh 18-19,0,Ps 149-150,0,Jer 9,0,Mt 23,0
+14 Jul,Jsh 20-21,0,Ac 1,0,Jer 10,0,Mt 24,0
+15 Jul,Jsh 22,0,Ac 2,0,Jer 11,0,Mt 25,0
+16 Jul,Jsh 23,0,Ac 3,0,Jer 12,0,Mt 26,0
+17 Jul,Jsh 24,0,Ac 4,0,Jer 13,0,Mt 27,0
+18 Jul,Jdg 1,0,Ac 5,0,Jer 14,0,Mt 28,0
+19 Jul,Jdg 2,0,Ac 6,0,Jer 15,0,Mk 1,0
+20 Jul,Jdg 3,0,Ac 7,0,Jer 16,0,Mk 2,0
+21 Jul,Jdg 4,0,Ac 8,0,Jer 17,0,Mk 3,0
+22 Jul,Jdg 5,0,Ac 9,0,Jer 18,0,Mk 4,0
+23 Jul,Jdg 6,0,Ac 10,0,Jer 19,0,Mk 5,0
+24 Jul,Jdg 7,0,Ac 11,0,Jer 20,0,Mk 6,0
+25 Jul,Jdg 8,0,Ac 12,0,Jer 21,0,Mk 7,0
+26 Jul,Jdg 9,0,Ac 13,0,Jer 22,0,Mk 8,0
+27 Jul,Jdg 10,0,Ac 14,0,Jer 23,0,Mk 9,0
+28 Jul,Jdg 11,0,Ac 15,0,Jer 24,0,Mk 10,0
+29 Jul,Jdg 12,0,Ac 16,0,Jer 25,0,Mk 11,0
+30 Jul,Jdg 13,0,Ac 17,0,Jer 26,0,Mk 12,0
+31 Jul,Jdg 14,0,Ac 18,0,Jer 27,0,Mk 13,0
+01 Aug,Jdg 15,0,Ac 19,0,Jer 28,0,Mk 14,0
+02 Aug,Jdg 16,0,Ac 20,0,Jer 29,0,Mk 15,0
+03 Aug,Jdg 17,0,Ac 21,0,Jer 30-31,0,Mk 16,0
+04 Aug,Jdg 18,0,Ac 22,0,Jer 32,0,Lk 1,0
+05 Aug,Jdg 19,0,Ac 23,0,Jer 33,0,Lk 2,0
+06 Aug,Jdg 20,0,Ac 24,0,Jer 34,0,Lk 3,0
+07 Aug,Jdg 21,0,Ac 25,0,Jer 35,0,Lk 4,0
+08 Aug,Ru 1,0,Ac 26,0,Jer 36,0,Lk 5,0
+09 Aug,Ru 2,0,Ac 27,0,Jer 37,0,Lk 6,0
+10 Aug,Ru 3-4,0,Ac 28,0,Jer 38,0,Lk 7,0
+11 Aug,1 Sa 1,0,Rm 1,0,Jer 39,0,Lk 8,0
+12 Aug,1 Sa 2,0,Rm 2,0,Jer 40,0,Lk 9,0
+13 Aug,1 Sa 3,0,Rm 3,0,Jer 41,0,Lk 10,0
+14 Aug,1 Sa 4,0,Rm 4,0,Jer 42,0,Lk 11,0
+15 Aug,1 Sa 5-6,0,Rm 5,0,Jer 43,0,Lk 12,0
+16 Aug,1 Sa 7-8,0,Rm 6,0,Jer 44-45,0,Lk 13,0
+17 Aug,1 Sa 9,0,Rm 7,0,Jer 46,0,Lk 14,0
+18 Aug,1 Sa 10,0,Rm 8,0,Jer 47,0,Lk 15,0
+19 Aug,1 Sa 11,0,Rm 9,0,Jer 48,0,Lk 16,0
+20 Aug,1 Sa 12,0,Rm 10,0,Jer 49,0,Lk 17,0
+21 Aug,1 Sa 13,0,Rm 11,0,Jer 50,0,Lk 18,0
+22 Aug,1 Sa 14,0,Rm 12,0,Jer 51,0,Lk 19,0
+23 Aug,1 Sa 15,0,Rm 13,0,Jer 52,0,Lk 20,0
+24 Aug,1 Sa 16,0,Rm 14,0,Lam 1,0,Lk 21,0
+25 Aug,1 Sa 17,0,Rm 15,0,Lam 2,0,Lk 22,0
+26 Aug,1 Sa 18,0,Rm 16,0,Lam 3,0,Lk 23,0
+27 Aug,1 Sa 19,0,1 Co 1,0,Lam 4,0,Lk 24,0
+28 Aug,1 Sa 20,0,1 Co 2,0,Lam 5,0,Jon 1,0
+29 Aug,1 Sa 21-22,0,1 Co 3,0,Ez 1,0,Jon 2,0
+30 Aug,1 Sa 23,0,1 Co 4,0,Ez 2,0,Jon 3,0
+31 Aug,1 Sa 24,0,1 Co 5,0,Ez 3,0,Jon 4,0
+01 Sep,1 Sa 25,0,1 Co 6,0,Ez 4,0,Jon 5,0
+02 Sep,1 Sa 26,0,1 Co 7,0,Ez 5,0,Jon 6,0
+03 Sep,1 Sa 27,0,1 Co 8,0,Ez 6,0,Jon 7,0
+04 Sep,1 Sa 28,0,1 Co 9,0,Ez 7,0,Jon 8,0
+05 Sep,1 Sa 29-30,0,1 Co 10,0,Ez 8,0,Jon 9,0
+06 Sep,1 Sa 31,0,1 Co 11,0,Ez 9,0,Jon 10,0
+07 Sep,2 Sa 1,0,1 Co 12,0,Ez 10,0,Jon 11,0
+08 Sep,2 Sa 2,0,1 Co 13,0,Ez 11,0,Jon 12,0
+09 Sep,2 Sa 3,0,1 Co 14,0,Ez 12,0,Jon 13,0
+10 Sep,2 Sa 4-5,0,1 Co 15,0,Ez 13,0,Jon 14,0
+11 Sep,2 Sa 6,0,1 Co 16,0,Ez 14,0,Jon 15,0
+12 Sep,2 Sa 7,0,2 Co 1,0,Ez 15,0,Jon 16,0
+13 Sep,2 Sa 8-9,0,2 Co 2,0,Ez 16,0,Jon 17,0
+14 Sep,2 Sa 10,0,2 Co 3,0,Ez 17,0,Jon 18,0
+15 Sep,2 Sa 11,0,2 Co 4,0,Ez 18,0,Jon 19,0
+16 Sep,2 Sa 12,0,2 Co 5,0,Ez 19,0,Jon 20,0
+17 Sep,2 Sa 13,0,2 Co 6,0,Ez 20,0,Jon 21,0
+18 Sep,2 Sa 14,0,2 Co 7,0,Ez 21,0,Ps 1-2,0
+19 Sep,2 Sa 15,0,2 Co 8,0,Ez 22,0,Ps 3-4,0
+20 Sep,2 Sa 16,0,2 Co 9,0,Ez 23,0,Ps 5-6,0
+21 Sep,2 Sa 17,0,2 Co 10,0,Ez 24,0,Ps 7-8,0
+22 Sep,2 Sa 18,0,2 Co 11,0,Ez 25,0,Ps 9,0
+23 Sep,2 Sa 19,0,2 Co 12,0,Ez 26,0,Ps 10,0
+24 Sep,2 Sa 20,0,2 Co 13,0,Ez 27,0,Ps 11-12,0
+25 Sep,2 Sa 21,0,Ga 1,0,Ez 28,0,Ps 13-14,0
+26 Sep,2 Sa 22,0,Ga 2,0,Ez 29,0,Ps 15-16,0
+27 Sep,2 Sa 23,0,Ga 3,0,Ez 30,0,Ps 17,0
+28 Sep,2 Sa 24,0,Ga 4,0,Ez 31,0,Ps 18,0
+29 Sep,1 Ki 1,0,Ga 5,0,Ez 32,0,Ps 19,0
+30 Sep,1 Ki 2,0,Ga 6,0,Ez 33,0,Ps 20-21,0
+01 Oct,1 Ki 3,0,Eph 1,0,Ez 34,0,Ps 22,0
+02 Oct,1 Ki 4-5,0,Eph 2,0,Ez 35,0,Ps 23-24,0
+03 Oct,1 Ki 6,0,Eph 3,0,Ez 36,0,Ps 25,0
+04 Oct,1 Ki 7,0,Eph 4,0,Ez 37,0,Ps 26-27,0
+05 Oct,1 Ki 8,0,Eph 5,0,Ez 38,0,Ps 28-29,0
+06 Oct,1 Ki 9,0,Eph 6,0,Ez 39,0,Ps 30,0
+07 Oct,1 Ki 10,0,Php 1,0,Ez 40,0,Ps 31,0
+08 Oct,1 Ki 11,0,Php 2,0,Ez 41,0,Ps 32,0
+09 Oct,1 Ki 12,0,Php 3,0,Ez 42,0,Ps 33,0
+10 Oct,1 Ki 13,0,Php 4,0,Ez 43,0,Ps 34,0
+11 Oct,1 Ki 14,0,Col 1,0,Ez 44,0,Ps 35,0
+12 Oct,1 Ki 15,0,Col 2,0,Ez 45,0,Ps 36,0
+13 Oct,1 Ki 16,0,Col 3,0,Ez 46,0,Ps 37,0
+14 Oct,1 Ki 17,0,Col 4,0,Ez 47,0,Ps 38,0
+15 Oct,1 Ki 18,0,1 Th 1,0,Ez 48,0,Ps 39,0
+16 Oct,1 Ki 19,0,1 Th 2,0,Dn 1,0,Ps 40-41,0
+17 Oct,1 Ki 20,0,1 Th 3,0,Dn 2,0,Ps 42-43,0
+18 Oct,1 Ki 21,0,1 Th 4,0,Dn 3,0,Ps 44,0
+19 Oct,1 Ki 22,0,1 Th 5,0,Dn 4,0,Ps 45,0
+20 Oct,2 Ki 1,0,2 Th 1,0,Dn 5,0,Ps 46-47,0
+21 Oct,2 Ki 2,0,2 Th 2,0,Dn 6,0,Ps 48,0
+22 Oct,2 Ki 3,0,2 Th 3,0,Dn 7,0,Ps 49,0
+23 Oct,2 Ki 4,0,1 Ti 1,0,Dn 8,0,Ps 50,0
+24 Oct,2 Ki 5,0,1 Ti 2,0,Dn 9,0,Ps 51,0
+25 Oct,2 Ki 6,0,1 Ti 3,0,Dn 10,0,Ps 52-54,0
+26 Oct,2 Ki 7,0,1 Ti 4,0,Dn 11,0,Ps 55,0
+27 Oct,2 Ki 8,0,1 Ti 5,0,Dn 12,0,Ps 56-57,0
+28 Oct,2 Ki 9,0,1 Ti 6,0,Ho 1,0,Ps 58-59,0
+29 Oct,2 Ki 10-11,0,2 Ti 1,0,Ho 2,0,Ps 60-61,0
+30 Oct,2 Ki 12,0,2 Ti 2,0,Ho 3-4,0,Ps 62-63,0
+31 Oct,2 Ki 13,0,2 Ti 3,0,Ho 5-6,0,Ps 64-65,0
+01 Nov,2 Ki 14,0,2 Ti 4,0,Ho 7,0,Ps 66-67,0
+02 Nov,2 Ki 15,0,Titus 1,0,Ho 8,0,Ps 68,0
+03 Nov,2 Ki 16,0,Titus 2,0,Ho 9,0,Ps 69,0
+04 Nov,2 Ki 17,0,Titus 3,0,Ho 10,0,Ps 70-71,0
+05 Nov,2 Ki 18,0,Phm 1,0,Ho 11,0,Ps 72,0
+06 Nov,2 Ki 19,0,Heb 1,0,Ho 12,0,Ps 73,0
+07 Nov,2 Ki 20,0,Heb 2,0,Ho 13,0,Ps 74,0
+08 Nov,2 Ki 21,0,Heb 3,0,Ho 14,0,Ps 75-76,0
+09 Nov,2 Ki 22,0,Heb 4,0,Jl 1,0,Ps 77,0
+10 Nov,2 Ki 23,0,Heb 5,0,Jl 2,0,Ps 78,0
+11 Nov,2 Ki 24,0,Heb 6,0,Jl 3,0,Ps 79,0
+12 Nov,2 Ki 25,0,Heb 7,0,Am 1,0,Ps 80,0
+13 Nov,1 Ch 1-2,0,Heb 8,0,Am 2,0,Ps 81-82,0
+14 Nov,1 Ch 3-4,0,Heb 9,0,Am 3,0,Ps 83-84,0
+15 Nov,1 Ch 5-6,0,Heb 10,0,Am 4,0,Ps 85,0
+16 Nov,1 Ch 7-8,0,Heb 11,0,Am 5,0,Ps 86,0
+17 Nov,1 Ch 9-10,0,Heb 12,0,Am 6,0,Ps 87-88,0
+18 Nov,1 Ch 11-12,0,Heb 13,0,Am 7,0,Ps 89,0
+19 Nov,1 Ch 13-14,0,Jm 1,0,Am 8,0,Ps 90,0
+20 Nov,1 Ch 15,0,Jm 2,0,Am 9,0,Ps 91,0
+21 Nov,1 Ch 16,0,Jm 3,0,Obad 1,0,Ps 92-93,0
+22 Nov,1 Ch 17,0,Jm 4,0,Jn 1,0,Ps 94,0
+23 Nov,1 Ch 18,0,Jm 5,0,Jn 2,0,Ps 95-96,0
+24 Nov,1 Ch 19-20,0,1 Pt 1,0,Jn 3,0,Ps 97-98,0
+25 Nov,1 Ch 21,0,1 Pt 2,0,Jn 4,0,Ps 99-101,0
+26 Nov,1 Ch 22,0,1 Pt 3,0,Mic 1,0,Ps 102,0
+27 Nov,1 Ch 23,0,1 Pt 4,0,Mic 2,0,Ps 103,0
+28 Nov,1 Ch 24-25,0,1 Pt 5,0,Mic 3,0,Ps 104,0
+29 Nov,1 Ch 26-27,0,2 Pt 1,0,Mic 4,0,Ps 105,0
+30 Nov,1 Ch 28,0,2 Pt 2,0,Mic 5,0,Ps 106,0
+01 Dec,1 Ch 29,0,2 Pt 3,0,Mic 6,0,Ps 107,0
+02 Dec,2 Ch 1,0,1 Jn 1,0,Mic 7,0,Ps 108-109,0
+03 Dec,2 Ch 2,0,1 Jn 2,0,Nah 1,0,Ps 110-111,0
+04 Dec,2 Ch 3-4,0,1 Jn 3,0,Nah 2,0,Ps 112-113,0
+05 Dec,2 Ch 5,0,1 Jn 4,0,Nah 3,0,Ps 114-115,0
+06 Dec,2 Ch 6,0,1 Jn 5,0,Hab 1,0,Ps 116,0
+07 Dec,2 Ch 7,0,2 Jn 1,0,Hab 2,0,Ps 117-118,0
+08 Dec,2 Ch 8,0,3 Jn 1,0,Hab 3,0,Ps 119:1-24,0
+09 Dec,2 Ch 9,0,Jude 1,0,Zep 1,0,Ps 119:25-48,0
+10 Dec,2 Ch 10,0,Rev 1,0,Zep 2,0,Ps 119:49-72,0
+11 Dec,2 Ch 11-12,0,Rev 2,0,Zep 3,0,Ps 119:73-96,0
+12 Dec,2 Ch 13,0,Rev 3,0,Hag 1,0,Ps 119:97-120,0
+13 Dec,2 Ch 14-15,0,Rev 4,0,Hag 2,0,Ps 119:121-144,0
+14 Dec,2 Ch 16,0,Rev 5,0,Zc 1,0,Ps 119:145-176,0
+15 Dec,2 Ch 17,0,Rev 6,0,Zc 2,0,Ps 120-122,0
+16 Dec,2 Ch 18,0,Rev 7,0,Zc 3,0,Ps 123-125,0
+17 Dec,2 Ch 19-20,0,Rev 8,0,Zc 4,0,Ps 126-128,0
+18 Dec,2 Ch 21,0,Rev 9,0,Zc 5,0,Ps 129-131,0
+19 Dec,2 Ch 22-23,0,Rev 10,0,Zc 6,0,Ps 132-134,0
+20 Dec,2 Ch 24,0,Rev 11,0,Zc 7,0,Ps 135-136,0
+21 Dec,2 Ch 25,0,Rev 12,0,Zc 8,0,Ps 137-138,0
+22 Dec,2 Ch 26,0,Rev 13,0,Zc 9,0,Ps 139,0
+23 Dec,2 Ch 27-28,0,Rev 14,0,Zc 10,0,Ps 140-141,0
+24 Dec,2 Ch 29,0,Rev 15,0,Zc 11,0,Ps 142,0
+25 Dec,2 Ch 30,0,Rev 16,0,Zc 12,0,Ps 143,0
+26 Dec,2 Ch 31,0,Rev 17,0,Zc 13,0,Ps 144,0
+27 Dec,2 Ch 32,0,Rev 18,0,Zc 14,0,Ps 145,0
+28 Dec,2 Ch 33,0,Rev 19,0,Mal 1,0,Ps 146-147,0
+29 Dec,2 Ch 34,0,Rev 20,0,Mal 2,0,Ps 148,0
+30 Dec,2 Ch 35,0,Rev 21,0,Mal 3,0,Ps 149,0
+31 Dec,2 Ch 36,0,Rev 22,0,Mal 4,0,Ps 150,0

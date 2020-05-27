@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_home"
+        icon="@drawable/home24"
+        title="Home" />
+    <tab
+        id="@+id/tab_media"
+        icon="@drawable/ic_media"
+        title="Media" />
+    <tab
+        id="@+id/tab_read"
+        icon="@drawable/bible24"
+        title="Bible" />
+    <tab
+        id="@+id/tab_plans"
+        icon="@drawable/event24"
+        title="Plans" />
+    <tab
+        id="@+id/tab_pray"
+        icon="@drawable/pray1"
+        title="Pray" />
+    <tab
+        id="@+id/tab_page"
+        icon="@drawable/user"
+        title="Connect" />
+
+</tabs>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#a5c600</color>
+    <color name="colorPrimaryDark">#167d7c</color>
+    <color name="colorAccent">#000000</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00675675</color>
+    <color name="appgreen">#02ac88</color>
+    <color name="red1">#dc4949</color>
+    <color name="white">#ffffff</color>
+    <color name="ash">#cec9c9</color>
+    <color name="today">#456439</color>
+    <color name="fullgreen">#469b17</color>
+    <color name="dailreadingbg">#75d7d7d7</color>
+    <color name="red">#f10c0c</color>
+    <color name="gray_text">#b6b6b6</color>
+    <color name="thickblue">#044581</color>
+    <color name="lightgreen">#b2e6da</color>
+    <color name="mediaback">#E9EEEE</color>
+    <color name="transparent_black">#80000000</color>
+    <color name="selectionblue">#607D8B</color>
+    <color name="notesbg">#bbf7f0</color>
+
+</resources>

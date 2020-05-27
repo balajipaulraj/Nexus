@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/swipefull">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/swipe"
+        android:background="@drawable/layout_back">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Book Chapter:Verse"
+            android:id="@+id/tv_verseid"
+            android:textSize="@dimen/largeTextSize"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lay_compare"
+        android:layout_below="@+id/swipe"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/na"
+            android:layout_gravity="center"
+            android:text="Not Available"
+            android:textSize="@dimen/largeTextSize"
+            android:visibility="gone"/>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_margin="10dp"
+            android:visibility="visible"
+            android:id="@+id/compare_list">
+        </ListView>
+    </LinearLayout>
+</RelativeLayout>

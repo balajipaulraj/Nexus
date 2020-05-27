@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res/android">
+    <item
+        app:id="@+id/itm_copy"
+        app:title="Copy"
+        android:showAsAction="always" />
+    <item
+        app:id="@+id/itm_highlight"
+        app:title="Highlight"
+        android:showAsAction="always" />
+    <item
+        app:id="@+id/itm_select"
+        app:title="Select"
+        android:showAsAction="always" />
+</menu>

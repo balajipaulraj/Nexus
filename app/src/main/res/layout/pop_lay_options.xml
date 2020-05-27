@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp">
+
+    <LinearLayout
+        android:id="@+id/pop_lay_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/glass_back"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:weightSum="100.0">
+
+        <TextView
+            android:id="@+id/tv_copy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="25.0"
+            android:text="Copy"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_compare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="25.0"
+            android:text="Search"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_mynote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="25.0"
+            android:text="Notes"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_flashcard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="25.0"
+            android:text="Memory Verse"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+    </LinearLayout>
+</LinearLayout>

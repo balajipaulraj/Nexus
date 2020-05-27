@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/viewlay"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:text="MEMORY VERSE"
+            android:background="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/headingTextSize" />
+
+        <androidx.viewpager.widget.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_flash_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="No Memory Verse added"
+            android:textSize="@dimen/normalTextSize"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewlay"
+        android:background="@color/transparent"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:weightSum="90.0">
+
+        <ImageButton
+            android:id="@+id/fleft_nav"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:layout_weight="30.0"
+            android:background="@color/transparent"
+            android:src="@drawable/previous_icon"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/tv_back"
+            android:layout_width="50dp"
+            android:elevation="8dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-5dp"
+            android:background="@color/colorPrimary"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:layout_weight="30.0"
+            android:text="BACK" />
+
+        <ImageButton
+            android:id="@+id/fright_nav"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:layout_weight="30.0"
+            android:background="@color/transparent"
+            android:gravity="right"
+            android:src="@drawable/next_icon" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:weightSum="100.0">
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:src="@drawable/appclose" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/white">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_font_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="For God so loved the world, that He gave His only begotten Son, that whoever believes in Him shall not perish, but have eternal life."
+                android:textSize="20sp" />
+        </ScrollView>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_weight="5.0"
+        android:orientation="horizontal"
+        android:weightSum="100.0">
+
+        <ImageView
+            android:id="@+id/iv_minus"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_weight="33.0"
+            android:paddingBottom="10dp"
+            android:src="@drawable/minus" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="33.0"
+            android:gravity="center"
+            android:weightSum="100.0">
+
+            <TextView
+                android:id="@+id/tv_reset"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="50.0"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:text="RESET"
+                android:textColor="@color/fullgreen"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_ok"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="50.0"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:text="OK"
+                android:textColor="@color/fullgreen"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_add"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_weight="33.0"
+            android:paddingBottom="10dp"
+            android:src="@drawable/plus" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100.0">
+
+    <LinearLayout
+        android:id="@+id/lay_option"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/pop_lay_options" />
+    </LinearLayout>
+
+    <!--<WebView-->
+        <!--android:id="@+id/wv_content"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="95.0"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:scrollbars="vertical" />-->
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scroll_new"
+            android:layout_above="@+id/lay_nav"
+            android:scrollbarFadeDuration="10"
+            android:verticalScrollbarPosition="right"
+            android:layout_below="@+id/pop_lay_options"
+            android:background="@color/transparent"
+            android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/lv_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="95.0"
+            android:layout_marginTop="10dp">
+        </ListView>
+        </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+</LinearLayout></RelativeLayout>

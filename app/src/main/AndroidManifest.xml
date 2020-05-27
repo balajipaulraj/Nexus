@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.admin.bibleapp">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/newsplash"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".ExoPlayerActivity"></activity>
+        <activity
+            android:name=".Activity.PageDetail"
+            android:label="Connect Detail"
+            android:theme="@style/AppNoTheme" />
+        <activity
+            android:name=".Activity.PageActivity"
+            android:label="Connect"
+            android:theme="@style/AppNoTheme" />
+        <activity android:name=".Activity.AudioViewer" />
+        <activity android:name=".Activity.VideoViewer" />
+        <activity android:name=".Activity.documentViewer" />
+        <activity
+            android:name=".Activity.EventDetail"
+            android:label="Event Detail"
+            android:theme="@style/AppNoTheme" />
+        <activity
+            android:name=".Activity.EventActivity"
+            android:label="Event"
+            android:theme="@style/AppNoTheme" />
+        <activity
+            android:name=".Activity.MediaDetail"
+            android:theme="@style/AppNoTheme" />
+        <activity
+            android:name=".Activity.MediaActivity"
+            android:label="My Media"
+            android:theme="@style/AppNoTheme" />
+        <activity
+            android:name=".Activity.ResetPasswordActivity"
+            android:theme="@style/AppTheme_NoActionBar" />
+        <activity
+            android:name=".Activity.SplashScreen"
+            android:label="NYI Nexus"
+            android:theme="@style/AppTheme_NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.CalPage"
+            android:label="NYI Nexus"
+            android:theme="@style/AppNoTheme" />
+        <activity
+            android:name=".Activity.MonthlyCal"
+            android:label="NYI Nexus"
+            android:theme="@style/AppNoTheme" />
+        <activity
+            android:name=".Activity.MyPrayer"
+            android:label="NYI Nexus"
+            android:theme="@style/AppNoTheme" />
+        <activity
+            android:name=".Activity.FirstPage"
+            android:label=" "
+            android:theme="@style/AppNoTheme" />
+        <activity
+            android:name=".Activity.SearchList"
+            android:label="Search List"
+            android:theme="@style/AppNoTheme" />
+        <activity
+            android:name=".Activity.Notes"
+            android:label="My Notes"
+            android:theme="@style/AppNoTheme" />
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:theme="@style/AppTheme_NoActionBar" />
+        <activity
+            android:name=".Activity.SignupActivity"
+            android:theme="@style/AppTheme_NoActionBar" />
+        <activity
+            android:name=".Sync"
+            android:theme="@style/AppTheme_NoActionBar" />
+        <activity
+            android:name=".Activity.UserProfile"
+            android:label="NYI Nexus"
+            android:theme="@style/AppNoTheme" />
+        <activity
+            android:name=".popupWindow.pop_activity_about"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name=".popupWindow.popFontSize"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name=".popupWindow.popReadPlan"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name=".popupWindow.popRead"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name=".popupWindow.popReset"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name=".popupWindow.popLoadplan"
+            android:theme="@style/Theme.Transparent" />
+        <activity android:name=".popupWindow.popFlashcard" />
+        <activity android:name=".popupWindow.popReadHistory" />
+        <activity
+            android:name=".Activity.Settings"
+            android:theme="@style/AppTheme_NoActionBar" />
+        <activity
+            android:name=".popupWindow.popLoadBible"
+            android:theme="@style/Theme.Transparent" />
+        <activity android:name=".Activity.ThankfulPrayers" />
+        <activity
+            android:name=".popupWindow.popResetConfirm"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name=".popupWindow.popSearch"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name=".popupWindow.aboutNASB"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name=".Activity.bibleContentSelect"
+            android:label="NYI Nexus"
+            android:theme="@style/AppNoTheme" />
+        <activity
+            android:name=".Activity.myprayergroup"
+            android:label="NYI Nexus"
+            android:theme="@style/AppNoTheme" />
+        <activity android:name=".CompareVerse" />
+        <activity
+            android:name=".ViewPager.CalContentView"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/AppNoTheme" />
+        <activity
+            android:name=".Activity.IncompleteReadings"
+            android:label="Incomplete Readings"
+            android:theme="@style/AppNoTheme" /> <!-- <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" /> -->
+        <activity android:name=".Activity.Recyclerviewfirstpage" />
+        <activity
+            android:name=".Activity.Verseoftheday"
+            android:theme="@style/AppTheme_NoActionBar" />
+        <activity android:name=".popupWindow.bibleselection" />
+        <activity android:name=".popupWindow.bibleselection1" />
+        <activity android:name=".popupWindow.PlanSelection" />
+        <activity android:name=".popupWindow.PlanBy" />
+        <activity android:name=".popupWindow.PlanSelection1" />
+        <activity android:name=".ViewPager.SampleFragment4" />
+        <activity
+            android:name=".Activity.AddSubjectDescription"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name=".NewFragment"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name=".Activity.PrayerActivity"
+            android:label="Incomplete Readings"
+            android:theme="@style/AppNoTheme" />
+        <activity android:name=".popupWindow.ListActivity" />
+    </application>
+
+</manifest>

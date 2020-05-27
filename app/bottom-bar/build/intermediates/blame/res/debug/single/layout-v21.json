@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Users\\Admin\\Downloads\\BottomBar-master\\BottomBar-master\\bottom-bar\\build\\intermediates\\res\\merged\\debug\\layout-v21\\bb_bottom_bar_item_container.xml",
+        "source": "C:\\Users\\Admin\\Downloads\\BottomBar-master\\BottomBar-master\\bottom-bar\\src\\main\\res\\layout-v21\\bb_bottom_bar_item_container.xml"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\Downloads\\BottomBar-master\\BottomBar-master\\bottom-bar\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\0d03b99aa96d3f804ec9c653ea314e60ff7015df\\output\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\Downloads\\BottomBar-master\\BottomBar-master\\bottom-bar\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\0d03b99aa96d3f804ec9c653ea314e60ff7015df\\output\\res\\layout-v21\\notification_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\Downloads\\BottomBar-master\\BottomBar-master\\bottom-bar\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\0d03b99aa96d3f804ec9c653ea314e60ff7015df\\output\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\Downloads\\BottomBar-master\\BottomBar-master\\bottom-bar\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\0d03b99aa96d3f804ec9c653ea314e60ff7015df\\output\\res\\layout-v21\\notification_action_tombstone.xml"
+    }
+]

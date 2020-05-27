@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:background="@color/transparent"
+    app:id="@+id/content_navigation"
+    app:layout_height="match_parent"
+    app:layout_width="match_parent"
+    tools:ignore="NamespaceTypo"
+    app:splitMotionEvents="true"
+    android:layout_behavior="@string/appbar_scrolling_view_behavior"
+    app:nestedScrollingEnabled="true">
+
+    <com.example.admin.bibleapp.CustomViewPager
+        app:id="@+id/pager"
+        app:layout_above="@+id/bottomlay"
+        app:layout_height="match_parent"
+        app:layout_marginBottom="40dp"
+        app:background="@color/transparent"
+        app:layout_width="match_parent" />
+
+    <LinearLayout
+        app:background="@color/colorPrimary"
+        app:id="@+id/bottomlay"
+        app:layout_alignParentBottom="true"
+        app:layout_marginTop="10dp"
+        app:layout_gravity="bottom"
+        app:layout_height="40dp"
+        app:layout_width="match_parent"
+        app:visibility="visible"
+        app:weightSum="100.0">
+
+        <ImageButton
+            app:background="@color/transparent"
+            app:id="@+id/left_nav"
+            app:layout_gravity="center"
+            app:layout_height="30dp"
+            app:layout_weight="30.0"
+            app:tint="@color/white"
+            app:layout_width="wrap_content"
+            app:src="@drawable/previous_icon"
+            app:visibility="visible" />
+
+        <ImageView
+            app:id="@+id/ib_unread_content"
+            app:layout_height="wrap_content"
+            app:layout_weight="40.0"
+            app:layout_gravity="center_vertical"
+            app:layout_width="wrap_content"
+            app:src="@drawable/appuncheck" />
+
+        <ImageView
+            app:id="@+id/ib_read_content"
+            app:layout_height="wrap_content"
+            app:layout_weight="40.0"
+            app:layout_width="wrap_content"
+            app:src="@drawable/appcheck"
+            app:visibility="gone" />
+
+        <ImageButton
+            app:background="@color/transparent"
+            app:id="@+id/right_nav"
+            app:tint="@color/white"
+            app:layout_gravity="center"
+            app:layout_height="30dp"
+            app:layout_weight="30.0"
+            app:layout_width="wrap_content"
+            app:src="@drawable/next_icon" />
+    </LinearLayout>
+</FrameLayout>
