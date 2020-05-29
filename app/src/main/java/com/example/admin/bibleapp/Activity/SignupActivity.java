@@ -38,14 +38,20 @@ public class SignupActivity extends AppCompatActivity {
         setContentView(R.layout.activity_signup);
 
         apiInterface = APIClient.getCacheEnabledRetrofit(this).create(APIInterface.class);
-        FirebaseInstanceId.getInstance().getInstanceId().addOnSuccessListener(SignupActivity.this, new OnSuccessListener<InstanceIdResult>() {
-            @Override
-            public void onSuccess(InstanceIdResult instanceIdResult) {
-                fcmnewToken = instanceIdResult.getToken();
-                Log.e("newToken", fcmnewToken);
+        try {
+            FirebaseInstanceId.getInstance().getInstanceId().addOnSuccessListener(
+                    SignupActivity.this, new OnSuccessListener<InstanceIdResult>() {
+                @Override
+                public void onSuccess(InstanceIdResult instanceIdResult) {
+                    fcmnewToken = instanceIdResult.getToken();
+                    Log.e("newToken", fcmnewToken);
 
-            }
-        });
+                }
+            });
+        } catch (Exception e) {
+            e.getMessage();
+        }
+
 
         btnSignIn = (Button) findViewById(R.id.sign_in_button);
         btnSignUp = (Button) findViewById(R.id.sign_up_button);

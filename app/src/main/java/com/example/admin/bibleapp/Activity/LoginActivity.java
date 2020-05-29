@@ -47,7 +47,7 @@ public class LoginActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.settoolbar);
         setSupportActionBar(toolbar);
         TextView tvTitle=(TextView) findViewById(R.id.tvTitle);
-        tvTitle.setText("Login");
+//        tvTitle.setText("Login");
 
         inputEmail = (EditText) findViewById(R.id.email);
         inputPassword = (EditText) findViewById(R.id.password);

@@ -73,7 +73,8 @@ public class SplashScreen extends AppCompatActivity {
         }
 
         public void run() {
-            Intent intent = new Intent(SplashScreen.this, CalPage.class);
+//            Intent intent = new Intent(SplashScreen.this, CalPage.class);
+            Intent intent = new Intent(SplashScreen.this, LoginActivity.class);
             intent.setFlags(intent.FLAG_ACTIVITY_NO_ANIMATION);
             SplashScreen.this.startActivity(intent);
             finish();
