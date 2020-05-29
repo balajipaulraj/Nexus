@@ -54,6 +54,7 @@ public class UserProfile extends AppCompatActivity {
     DrawerLayout drawer;
     EditText tvFirstName, tvLastName, tvLocation, tvUserId, tvGender, tvDob, tvRegister, tvEmail, tvStatus, tvMobile;
     BottomBar bottomBar;
+    Button sign_in_button;
     private ListView mDrawerList;
     DBhelper dbHelper;
     ImageView ivEdit;
@@ -67,7 +68,7 @@ public class UserProfile extends AppCompatActivity {
         setContentView(R.layout.activity_user);
         toolbar = (Toolbar) findViewById(R.id.settoolbar);
         setSupportActionBar(toolbar);
-        TextView tvTitle=(TextView) findViewById(R.id.tvTitle);
+        TextView tvTitle = (TextView) findViewById(R.id.tvTitle);
         tvTitle.setText("Profile");
         bottomBar = (BottomBar) findViewById(R.id.bottomBar);
         sharedPreferences = getSharedPreferences("MyPrefs", 0);
@@ -90,6 +91,7 @@ public class UserProfile extends AppCompatActivity {
         tvEmail = (EditText) findViewById(R.id.tv_email);
         tvMobile = (EditText) findViewById(R.id.tv_mobile);
         tvStatus = (EditText) findViewById(R.id.tv_status);
+        sign_in_button = (Button) findViewById(R.id.sign_in_button);
         try {
 
             tvFirstName.setText(userSites.get(0).getFirstname());
@@ -105,6 +107,16 @@ public class UserProfile extends AppCompatActivity {
         } catch (Exception e) {
             Log.e("Exception ", e.getMessage());
         }
+
+        sign_in_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(UserProfile.this, SignupActivity.class);
+
+                startActivity(i);
+                finish();
+            }
+        });
 //
         ivEdit.setOnClickListener(new View.OnClickListener() {
             @Override

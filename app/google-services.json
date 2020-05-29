@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1060682414346",
+    "firebase_url": "https://nexus-760f0.firebaseio.com",
+    "project_id": "nexus-760f0",
+    "storage_bucket": "nexus-760f0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1060682414346:android:729b9f7bbd15c1e219e2f3",
+        "android_client_info": {
+          "package_name": "com.example.admin.bibleapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1060682414346-11p7giu5a07iv7kh0dmuq5f7pmgk8u58.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.admin.bibleapp",
+            "certificate_hash": "36059305e5132f34cc655e1ffadd9c144eeb50e4"
+          }
+        },
+        {
+          "client_id": "1060682414346-dj55ujbaa98jvfts85qs06si1p4sa7co.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgzSiTJhOypOFB0UgMK-lsA-VqjKiG4bs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1060682414346-dj55ujbaa98jvfts85qs06si1p4sa7co.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
