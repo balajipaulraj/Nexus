@@ -252,7 +252,6 @@ public class myprayergroup extends AppCompatActivity {
 
     public void shift(String name, int i) {
         dbHelper = new DBhelper(getApplicationContext());
-
         int j = 0;
         if (i == PrayCategory.size() - 1) {
             Dialog dialog1 = new Dialog(myprayergroup.this);
