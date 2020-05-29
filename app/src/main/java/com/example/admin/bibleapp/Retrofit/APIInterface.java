@@ -34,20 +34,30 @@ public interface APIInterface {
 
     @FormUrlEncoded
     @POST("/user/edit-password")
-    Call<UserLogin> editpassword(@Field("email") String email, @Field("oldpassword") String oldpassword
+    Call<UserLogin> editpassword(@Field("userId") Integer userid, @Field("email") String email, @Field("oldpassword") String oldpassword
             , @Field("newpassword") String newpassword);
 
     @FormUrlEncoded
     @POST("/user/register")
     Call<Reg> signup(@Field("email") String email, @Field("password") String password,
                      @Field("firstname") String firstname, @Field("lastname") String lastname,
-                     @Field("phone") String phone,@Field("deviceToken") String deviceToken);
+                     @Field("phone") String phone, @Field("deviceToken") String deviceToken);
 
     @FormUrlEncoded
     @PUT("/user/edit-profile")
-    Call<UserLogin> editprofile(@Field("email") String email, @Field("password") String password,
-                           @Field("firstname") String firstname, @Field("lastname") String lastname,
-                           @Field("phone") String phone);
+    Call<UserLogin> editprofile(@Field("userId ") String userId,
+                                @Field("firstname") String firstname,
+                                @Field("lastname") String lastname,
+                                @Field("phone") String phone,
+                                @Field("gender") String gender,
+                                @Field("dob") String dob,
+                                @Field("profilePic") String profilePic,
+                                @Field("address") String address,
+                                @Field("city") String city,
+                                @Field("state") String state,
+                                @Field("pincode") String pincode,
+                                @Field("published ") String published
+    );
 
     ////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -106,7 +116,7 @@ public interface APIInterface {
     Call<ArrayList<Event>> getEvent(@Query("userId") int userid);
 
     @GET("/Event/{id}")
-    Call<ArrayList<Event>> getIdEvent(@Path("id") int id,@Query("userId") int userid );
+    Call<ArrayList<Event>> getIdEvent(@Path("id") int id, @Query("userId") int userid);
 
     @GET("/Event/lang/{id}")
     Call<Event> getLangEvent(@Query("userId") int userid, @Path("id") int id);
@@ -120,7 +130,7 @@ public interface APIInterface {
     Call<ArrayList<Media>> getMedia(@Query("userId") int userid);
 
     @GET("/Media/{id}")
-    Call<ArrayList<Media>> getIdMedia( @Path("id") int id,@Query("userId") int userid);
+    Call<ArrayList<Media>> getIdMedia(@Path("id") int id, @Query("userId") int userid);
 
     @GET("/Media/lang/{id}")
     Call<Media> getLangMedia(@Query("userId") int userid, @Path("id") int id);
@@ -134,13 +144,12 @@ public interface APIInterface {
     Call<ArrayList<Page>> getPage(@Query("userId") int userid);
 
     @GET("/Page/{id}")
-    Call<ArrayList<Page>> getIdPage( @Path("id") int id,@Query("userId") int userid);
+    Call<ArrayList<Page>> getIdPage(@Path("id") int id, @Query("userId") int userid);
 
     @GET("/Page/lang/{id}")
     Call<Page> getLangPage(@Query("userId") int userid, @Path("id") int id);
 
     ////////////////////////////////////////////////////////////////////////////////////////////////
-
 
 
     @GET("/Updates")

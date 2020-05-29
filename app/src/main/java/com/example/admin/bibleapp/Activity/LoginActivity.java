@@ -46,7 +46,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         Toolbar toolbar = (Toolbar) findViewById(R.id.settoolbar);
         setSupportActionBar(toolbar);
-        TextView tvTitle=(TextView) findViewById(R.id.tvTitle);
+        TextView tvTitle = (TextView) findViewById(R.id.tvTitle);
 //        tvTitle.setText("Login");
 
         inputEmail = (EditText) findViewById(R.id.email);
@@ -98,12 +98,13 @@ public class LoginActivity extends AppCompatActivity {
                                         sharedPreferences = getSharedPreferences("MyPrefs", 0);
                                         SharedPreferences.Editor date_store = sharedPreferences.edit();
                                         List<user> user = userLogin.getUser();
-                                        date_store.putInt("userid", 1);
+                                        System.out.println("user--> " + user.get(0).getUserId());
+                                        date_store.putInt("userid", user.get(0).getUserId());
                                         Gson gson = new Gson();
                                         String json = gson.toJson(user);
                                         date_store.putString("userdata", json);
                                         date_store.putBoolean("firsttime", false);
-                                        date_store.commit();
+                                        date_store.apply();
                                         SideMenu sideMenu = new SideMenu();
                                         sideMenu.getMenuItem(LoginActivity.this, 1);
                                         startActivity(new Intent(LoginActivity.this, bibleselection.class));

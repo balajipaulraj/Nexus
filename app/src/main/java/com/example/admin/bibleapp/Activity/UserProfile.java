@@ -53,8 +53,8 @@ public class UserProfile extends AppCompatActivity {
     Toolbar toolbar;
     DrawerLayout drawer;
     EditText tvFirstName, tvLastName, tvLocation, tvUserId, tvGender, tvDob, tvRegister, tvEmail, tvStatus, tvMobile;
+    Button btn_submit_update;
     BottomBar bottomBar;
-    Button sign_in_button;
     private ListView mDrawerList;
     DBhelper dbHelper;
     ImageView ivEdit;
@@ -91,7 +91,7 @@ public class UserProfile extends AppCompatActivity {
         tvEmail = (EditText) findViewById(R.id.tv_email);
         tvMobile = (EditText) findViewById(R.id.tv_mobile);
         tvStatus = (EditText) findViewById(R.id.tv_status);
-        sign_in_button = (Button) findViewById(R.id.sign_in_button);
+        btn_submit_update = (Button) findViewById(R.id.btn_submit_update);
         try {
 
             tvFirstName.setText(userSites.get(0).getFirstname());
@@ -108,15 +108,7 @@ public class UserProfile extends AppCompatActivity {
             Log.e("Exception ", e.getMessage());
         }
 
-        sign_in_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(UserProfile.this, SignupActivity.class);
 
-                startActivity(i);
-                finish();
-            }
-        });
 //
         ivEdit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -129,7 +121,10 @@ public class UserProfile extends AppCompatActivity {
                     tvMobile.setEnabled(false);
                     tvEmail.setEnabled(false);
                     tvStatus.setEnabled(false);
-//                    upload();
+                    tvDob.setEnabled(false);
+                    tvGender.setEnabled(false);
+                    btn_submit_update.setVisibility(View.GONE);
+//
                 } else {
                     tvFirstName.setEnabled(true);
                     tvLastName.setEnabled(true);
@@ -137,7 +132,16 @@ public class UserProfile extends AppCompatActivity {
                     tvMobile.setEnabled(true);
                     tvEmail.setEnabled(true);
                     tvStatus.setEnabled(true);
+                    tvDob.setEnabled(true);
+                    tvGender.setEnabled(true);
+                    btn_submit_update.setVisibility(View.VISIBLE);
                 }
+            }
+        });
+        btn_submit_update.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+//                upload();
             }
         });
 
@@ -260,27 +264,27 @@ public class UserProfile extends AppCompatActivity {
 
     //
 //
-    public void upload() {
-        Call<UserLogin> call = apiInterface.editprofile(tvEmail.getText().toString(), userSites.get(0).getPassword(), tvFirstName.getText().toString(),
-                tvLastName.getText().toString(), tvMobile.getText().toString());
-        call.enqueue(new Callback<UserLogin>() {
-            @Override
-            public void onResponse(Call<UserLogin> call, Response<UserLogin> response) {
-                if (response.isSuccessful()) {
-
-                } else {
-
-                    Toast.makeText(getApplicationContext(), "Update Failed", Toast.LENGTH_SHORT).show();
-                }
-            }
-
-            @Override
-            public void onFailure(Call<UserLogin> call, Throwable t) {
-                Toast.makeText(getApplicationContext(), "Update Failed", Toast.LENGTH_SHORT).show();
-                call.cancel();
-            }
-        });
-    }
+//    public void upload() {
+//        Call<UserLogin> call = apiInterface.editprofile( tvFirstName.getText().toString(),
+//                tvLastName.getText().toString(), tvMobile.getText().toString());
+//        call.enqueue(new Callback<UserLogin>() {
+//            @Override
+//            public void onResponse(Call<UserLogin> call, Response<UserLogin> response) {
+//                if (response.isSuccessful()) {
+//
+//                } else {
+//
+//                    Toast.makeText(getApplicationContext(), "Update Failed", Toast.LENGTH_SHORT).show();
+//                }
+//            }
+//
+//            @Override
+//            public void onFailure(Call<UserLogin> call, Throwable t) {
+//                Toast.makeText(getApplicationContext(), "Update Failed", Toast.LENGTH_SHORT).show();
+//                call.cancel();
+//            }
+//        });
+//    }
 
 
     private void search() {

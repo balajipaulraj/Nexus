@@ -62,7 +62,7 @@ public class SplashScreen extends AppCompatActivity {
             date_store.putBoolean("firsttime", false);
             date_store.apply();
 
-            startActivity(new Intent(SplashScreen.this, bibleselection.class));
+            startActivity(new Intent(SplashScreen.this, LoginActivity.class));
             finish();
 //            SplashScreen.this.pd.dismiss();
         }
@@ -99,6 +99,7 @@ public class SplashScreen extends AppCompatActivity {
             Image_Path.mkdirs();
         }
         userId = this.sharedPreferences.getInt("userid", 0);
+        System.out.println("userIdSpla--> " + userId);
         SideMenu sideMenu = new SideMenu();
         sideMenu.getMenuItem(SplashScreen.this, 1);
         APIInterface apiInterface = APIClient.getCacheEnabledRetrofit(this).create(APIInterface.class);
@@ -129,7 +130,7 @@ public class SplashScreen extends AppCompatActivity {
             public void onFailure(Call<ArrayList<Sync>> call, Throwable t) {
                 Log.e("invalis", t.getMessage());
                 try {
-                call.cancel();
+                    call.cancel();
                 } catch (Exception e) {
 
                 }
@@ -159,6 +160,7 @@ public class SplashScreen extends AppCompatActivity {
 
     private void init() {
         try {
+            System.out.println("Shaspl--> " + sharedPreferences.getBoolean("firsttime", true));
             if (this.sharedPreferences.getBoolean("firsttime", true)) {
                 new Handler().postDelayed(new C02511(), 5000);
             } else {

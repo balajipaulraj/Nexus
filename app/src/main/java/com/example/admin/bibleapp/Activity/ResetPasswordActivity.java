@@ -2,6 +2,7 @@ package com.example.admin.bibleapp.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -24,6 +25,8 @@ public class ResetPasswordActivity extends AppCompatActivity {
     private Button btnReset;
     APIInterface apiInterface;
     private ProgressBar progressBar;
+    int userId;
+    SharedPreferences sharedPreferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +38,7 @@ public class ResetPasswordActivity extends AppCompatActivity {
         btnReset = (Button) findViewById(R.id.reset);
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
         apiInterface = APIClient.getCacheEnabledRetrofit(this).create(APIInterface.class);
+        sharedPreferences = getSharedPreferences("MyPrefs", 0);
 
         btnReset.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,17 +54,20 @@ public class ResetPasswordActivity extends AppCompatActivity {
                 } else if (newpassword.length() < 6) {
                     Toast.makeText(getApplicationContext(), "New Password too short, enter minimum 6 characters!", Toast.LENGTH_SHORT).show();
                 } else {
-                    Call<UserLogin> call = apiInterface.editpassword(email, oldpassword, newpassword);
+                    userId = sharedPreferences.getInt("userid", 0);
+
+                    Call<UserLogin> call = apiInterface.editpassword(userId, email, oldpassword, newpassword);
+                    System.out.println("call--> " + call.toString());
                     call.enqueue(new Callback<UserLogin>() {
                         @Override
                         public void onResponse(Call<UserLogin> call, Response<UserLogin> response) {
                             if (response.isSuccessful()) {
+                                System.out.println("response--> " + response.body().getType());
                                 progressBar.setVisibility(View.GONE);
                                 Toast.makeText(getApplicationContext(), "Reset Password successfull", Toast.LENGTH_SHORT).show();
                                 finish();
-                            }
-                            else
-                            {
+                            } else {
+                                System.out.println("responseerror--> " + response.body().getUser());
                                 progressBar.setVisibility(View.GONE);
                                 Toast.makeText(getApplicationContext(), "Incorrect Credentials", Toast.LENGTH_SHORT).show();
                             }
@@ -68,6 +75,7 @@ public class ResetPasswordActivity extends AppCompatActivity {
 
                         @Override
                         public void onFailure(Call<UserLogin> call, Throwable t) {
+                            System.out.println("responseerror--? " + t.getMessage());
                             progressBar.setVisibility(View.GONE);
                             Toast.makeText(getApplicationContext(), "Incorrect Credentials", Toast.LENGTH_SHORT).show();
                             call.cancel();
