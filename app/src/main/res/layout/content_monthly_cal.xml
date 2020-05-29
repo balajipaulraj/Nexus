@@ -17,7 +17,7 @@
         custom:weightSum="100.0"
         tools:ignore="UnknownId">
 
-        <com.example.admin.bibleapp.CalendarView
+        <com.example.admin.bibleapp.Views.CalendarView
             custom:id="@+id/calendar_view"
             custom:layout_width="match_parent"
             custom:layout_height="300dp"

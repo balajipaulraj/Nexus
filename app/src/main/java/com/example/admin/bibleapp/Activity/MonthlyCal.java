@@ -34,8 +34,8 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.example.admin.bibleapp.Adapter.DrawerItemCustomAdapter;
-import com.example.admin.bibleapp.CalendarView;
-import com.example.admin.bibleapp.CalendarView.EventHandler;
+import com.example.admin.bibleapp.Views.CalendarView;
+import com.example.admin.bibleapp.Views.CalendarView.EventHandler;
 import com.example.admin.bibleapp.Database.DBhelper;
 import com.example.admin.bibleapp.Model.MenuItems;
 import com.example.admin.bibleapp.Model.user;

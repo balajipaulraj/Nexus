@@ -13,7 +13,6 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.example.admin.bibleapp.Database.DBhelper;
 import com.example.admin.bibleapp.Model.Prayer;
-import com.example.admin.bibleapp.NewFragment;
 import com.example.admin.bibleapp.R;
 
 import java.util.ArrayList;

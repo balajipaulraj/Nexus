@@ -50,7 +50,6 @@ import com.example.admin.bibleapp.Adapter.BookAdapter;
 import com.example.admin.bibleapp.Adapter.DrawerItemCustomAdapter;
 import com.example.admin.bibleapp.Adapter.PrayerAdapter;
 import com.example.admin.bibleapp.Adapter.VerseAdapter;
-import com.example.admin.bibleapp.C0246R;
 import com.example.admin.bibleapp.Model.MenuItems;
 import com.example.admin.bibleapp.Model.user;
 import com.example.admin.bibleapp.R;
@@ -700,7 +699,7 @@ public class CalContentView extends AppCompatActivity  {
         this.initialdate = this.sharedPreferences.getString("initialdate", null);
         this.db = new DBhelper(this, getFilesDir( ).getAbsolutePath( ));
         this.drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, this.drawer, this.toolbar, C0246R.string.navigation_drawer_open, C0246R.string.navigation_drawer_close);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, this.drawer, this.toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         this.drawer.setDrawerListener(toggle);
         toggle.syncState( );
         mDrawerList = (ListView) findViewById(R.id.left_drawer);

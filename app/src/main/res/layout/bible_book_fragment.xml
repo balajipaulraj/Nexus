@@ -36,7 +36,7 @@
             android:stretchMode="columnWidth"
             android:visibility="visible" />
 
-        <com.example.admin.bibleapp.MyGridView
+        <com.example.admin.bibleapp.Views.MyGridView
             android:id="@+id/grid_chap"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -47,7 +47,7 @@
             android:stretchMode="columnWidth"
             android:visibility="gone" />
 
-        <com.example.admin.bibleapp.MyGridView
+        <com.example.admin.bibleapp.Views.MyGridView
             android:id="@+id/grid_vers"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

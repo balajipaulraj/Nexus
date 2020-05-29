@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.admin.bibleapp.Fragment_flash_card">
+    tools:context="com.example.admin.bibleapp.Activity.Fragment_flash_card">
 
 
 

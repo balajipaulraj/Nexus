@@ -15,7 +15,7 @@ import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import com.example.admin.bibleapp.Database.DBhelper;
-import com.example.admin.bibleapp.Fragment_flash_card;
+import com.example.admin.bibleapp.Activity.Fragment_flash_card;
 import com.example.admin.bibleapp.R;
 
 import java.util.List;

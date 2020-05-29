@@ -55,14 +55,12 @@ import com.example.admin.bibleapp.Adapter.BookAdapter;
 import com.example.admin.bibleapp.Adapter.ChapterAdapter;
 import com.example.admin.bibleapp.Adapter.FirstPageListview;
 import com.example.admin.bibleapp.Adapter.VerseAdapter;
-import com.example.admin.bibleapp.C0246R;
-import com.example.admin.bibleapp.CompareVerse;
 import com.example.admin.bibleapp.Database.DBhelper;
-import com.example.admin.bibleapp.OnBlurCompleteListener;
-import com.example.admin.bibleapp.OnSwipeTouchListener2;
+import com.example.admin.bibleapp.Views.OnBlurCompleteListener;
+import com.example.admin.bibleapp.Views.OnSwipeTouchListener2;
 import com.example.admin.bibleapp.Parser.Employee;
 import com.example.admin.bibleapp.R;
-import com.example.admin.bibleapp.customwebview;
+import com.example.admin.bibleapp.Views.customwebview;
 import com.example.admin.bibleapp.popupWindow.popFlashcard;
 import com.example.admin.bibleapp.popupWindow.popFontSize;
 import com.example.admin.bibleapp.popupWindow.popReadHistory;
@@ -463,7 +461,7 @@ public class FirstPage extends AppCompatActivity implements GestureDetector.OnGe
         edit.putString("firsttime", "true");
         edit.commit( );
         this.drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, this.drawer, toolbar, C0246R.string.navigation_drawer_open, C0246R.string.navigation_drawer_close);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, this.drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         this.drawer.setDrawerListener(toggle);
         toggle.syncState( );
 //       this.wv_Content.setWebChromeClient(new C02251());
@@ -1210,7 +1208,7 @@ public class FirstPage extends AppCompatActivity implements GestureDetector.OnGe
         } else {
             this.poplay.setVisibility(View.GONE);
             this.pop.dismiss( );
-            this.fab.setVisibility(View.VISIBLE);
+            fab.setVisibility(View.VISIBLE);
         }
     }
 

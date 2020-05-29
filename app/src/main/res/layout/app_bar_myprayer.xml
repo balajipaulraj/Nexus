@@ -37,7 +37,7 @@
                 app:layout_width="match_parent"
                 app:layout_height="match_parent">
 
-                <com.example.admin.bibleapp.MyGridView
+                <com.example.admin.bibleapp.Views.MyGridView
                     app:id="@+id/grid_prayer"
                     app:layout_width="match_parent"
                     app:layout_height="wrap_content"

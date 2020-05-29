@@ -37,11 +37,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.admin.bibleapp.Adapter.DrawerItemCustomAdapter;
 import com.example.admin.bibleapp.Adapter.NotesAdapter;
 import com.example.admin.bibleapp.Adapter.PrayerAdapter;
-import com.example.admin.bibleapp.C0246R;
 import com.example.admin.bibleapp.Database.DBhelper;
 import com.example.admin.bibleapp.Model.NotesModel;
 import com.example.admin.bibleapp.Model.user;
-import com.example.admin.bibleapp.OnBlurCompleteListener;
+import com.example.admin.bibleapp.Views.OnBlurCompleteListener;
 import com.example.admin.bibleapp.Parser.Employee;
 import com.example.admin.bibleapp.Parser.XMLPullParserHandler;
 import com.example.admin.bibleapp.R;
@@ -242,7 +241,7 @@ public class Notes extends AppCompatActivity {
         } else {
             this.fontSize = Float.parseFloat(flot_size);
         }
-        new ActionBarDrawerToggle(this, this.drawer, toolbar, C0246R.string.navigation_drawer_open, C0246R.string.navigation_drawer_close).syncState();
+        new ActionBarDrawerToggle(this, this.drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close).syncState();
         this.Adapter = new NotesAdapter(this.dbhelper.getNotes(), R.layout.row_notes, this);
         this.rv_notes.setAdapter(this.Adapter);
         this.Adapter.notifyDataSetChanged();
@@ -573,7 +572,7 @@ public class Notes extends AppCompatActivity {
                 edit_gen.putString("mytime", CurrentDate);
                 edit_gen.commit();
                 if (sharedtitle.equals("Title") || data.equals("")) {
-                    Toast.makeText(getApplicationContext(), "Add title and Content to save", 1).show();
+                    Toast.makeText(getApplicationContext(), "Add title and Content to save", Toast.LENGTH_LONG).show();
                 } else {
                     if (this.dbhelper.getdate(CurrentDate)) {
                         this.dbhelper.updatenote(CurrentDate, sharedtitle, data);

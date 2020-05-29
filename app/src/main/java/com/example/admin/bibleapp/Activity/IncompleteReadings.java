@@ -28,7 +28,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.admin.bibleapp.Adapter.PrayerAdapter;
 import com.example.admin.bibleapp.Adapter.ReadingAdapter;
 import com.example.admin.bibleapp.Database.DBhelper;
-import com.example.admin.bibleapp.OnBlurCompleteListener;
+import com.example.admin.bibleapp.Views.OnBlurCompleteListener;
 import com.example.admin.bibleapp.R;
 import com.example.admin.bibleapp.popupWindow.PlanSelection1;
 import com.example.admin.bibleapp.popupWindow.bibleselection1;

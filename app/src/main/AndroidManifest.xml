@@ -16,7 +16,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ExoPlayerActivity"></activity>
+        <activity android:name=".Activity.ExoPlayerActivity"></activity>
         <activity
             android:name=".Activity.PageDetail"
             android:label="Connect Detail"
@@ -87,7 +87,7 @@
             android:name=".Activity.SignupActivity"
             android:theme="@style/AppTheme_NoActionBar" />
         <activity
-            android:name=".Sync"
+            android:name=".Activity.Sync"
             android:theme="@style/AppTheme_NoActionBar" />
         <activity
             android:name=".Activity.UserProfile"
@@ -138,7 +138,7 @@
             android:name=".Activity.myprayergroup"
             android:label="NYI Nexus"
             android:theme="@style/AppNoTheme" />
-        <activity android:name=".CompareVerse" />
+        <activity android:name=".Activity.CompareVerse" />
         <activity
             android:name=".ViewPager.CalContentView"
             android:configChanges="keyboardHidden|orientation|screenSize"
@@ -161,7 +161,7 @@
             android:name=".Activity.AddSubjectDescription"
             android:theme="@style/Theme.Transparent" />
         <activity
-            android:name=".NewFragment"
+            android:name=".Activity.NewFragment"
             android:theme="@style/Theme.Transparent" />
         <activity
             android:name=".Activity.PrayerActivity"

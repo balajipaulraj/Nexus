@@ -15,25 +15,21 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.admin.bibleapp.Database.DBhelper;
-import com.example.admin.bibleapp.Model.MenuItems;
 import com.example.admin.bibleapp.Model.Sync;
-import com.example.admin.bibleapp.Model.user;
 import com.example.admin.bibleapp.R;
 import com.example.admin.bibleapp.Retrofit.APIClient;
 import com.example.admin.bibleapp.Retrofit.APIInterface;
-import com.example.admin.bibleapp.SideMenu;
+import com.example.admin.bibleapp.Retrofit.SideMenu;
 import com.example.admin.bibleapp.popupWindow.bibleselection;
 import com.google.gson.Gson;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;

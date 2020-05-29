@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.admin.bibleapp.R;
 import com.example.admin.bibleapp.Activity.FirstPage;
 import com.example.admin.bibleapp.Model.ContentModel;
-import com.example.admin.bibleapp.ObservableWebView;
+import com.example.admin.bibleapp.Views.ObservableWebView;
 import java.util.List;
 
 public class ContentAdapter extends RecyclerView.Adapter<ContentAdapter.ViewHolder> {

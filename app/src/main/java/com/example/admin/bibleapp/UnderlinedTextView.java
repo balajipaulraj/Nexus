@@ -32,9 +32,9 @@ public class UnderlinedTextView extends TextView {
 
     private void init(Context context, AttributeSet attributeSet, int defStyle) {
         this.mDensity = context.getResources().getDisplayMetrics().density;
-        TypedArray typedArray = context.obtainStyledAttributes(attributeSet, C0246R.styleable.UnderlinedTextView, defStyle, 0);
-        this.mStrokeWidth = typedArray.getDimension(0, this.mDensity * 2.0f);
-        typedArray.recycle();
+//        TypedArray typedArray = context.obtainStyledAttributes(attributeSet, C0246R.styleable.UnderlinedTextView, defStyle, 0);
+//        this.mStrokeWidth = typedArray.getDimension(0, this.mDensity * 2.0f);
+//        typedArray.recycle();
         this.mRect = new Rect();
         this.mPaint = new Paint();
         this.mPaint.setStyle(Style.STROKE);

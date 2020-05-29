@@ -16,8 +16,6 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.core.content.ContextCompat;
-
-import com.example.admin.bibleapp.C0246R;
 import com.example.admin.bibleapp.R;
 import java.lang.ref.SoftReference;
 import java.util.Hashtable;
@@ -93,6 +91,6 @@ public class UiUtil {
         sendIntent.setAction("android.intent.action.SEND");
         sendIntent.putExtra("android.intent.extra.TEXT", text);
         sendIntent.setType("text/plain");
-        context.startActivity(Intent.createChooser(sendIntent, context.getResources().getText(C0246R.string.send_to)));
+        context.startActivity(Intent.createChooser(sendIntent, context.getResources().getText(R.string.send_to)));
     }
 }

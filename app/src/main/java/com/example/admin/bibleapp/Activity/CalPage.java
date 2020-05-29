@@ -52,12 +52,10 @@ import com.example.admin.bibleapp.DoubleClickListener;
 
 import com.example.admin.bibleapp.Model.MenuItems;
 import com.example.admin.bibleapp.Model.user;
-import com.example.admin.bibleapp.OnSwipeTouchListener2;
+import com.example.admin.bibleapp.Views.OnSwipeTouchListener2;
 import com.example.admin.bibleapp.Parser.Employee;
 import com.example.admin.bibleapp.Parser.XMLPullParserHandler;
 import com.example.admin.bibleapp.R;
-import com.example.admin.bibleapp.SideMenu;
-import com.example.admin.bibleapp.Sync;
 import com.example.admin.bibleapp.ViewPager.CalContentView;
 import com.example.admin.bibleapp.popupWindow.popFlashcard;
 import com.example.admin.bibleapp.popupWindow.popReadHistory;

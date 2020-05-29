@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.admin.bibleapp.R;
 import com.example.admin.bibleapp.Model.Table;
-import com.example.admin.bibleapp.OnLoadMoreListener;
+import com.example.admin.bibleapp.Views.OnLoadMoreListener;
 import com.example.admin.bibleapp.ProgressViewHolder.ProgressViewHolder;
 import com.example.admin.bibleapp.RecyclerViewHolders.RecyclerViewHolders;
 import java.util.List;

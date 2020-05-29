@@ -11,6 +11,7 @@
     <string name="reset_password">Reset Password</string>
     <string name="email">Email</string>
     <string name="firstname">First Name</string>
+    <string name="send_to">Send To</string>
     <string name="lastname">Last Name</string>
     <string name="phone">Phone</string>
     <string name="minimum_password">Password too short, enter minimum 6 characters!</string>

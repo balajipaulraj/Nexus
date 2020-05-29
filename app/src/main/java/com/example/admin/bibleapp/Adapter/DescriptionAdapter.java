@@ -11,7 +11,7 @@ import android.widget.Toast;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.admin.bibleapp.Model.DescriptionModel;
-import com.example.admin.bibleapp.NewFragment;
+import com.example.admin.bibleapp.Activity.NewFragment;
 import com.example.admin.bibleapp.R;
 
 import java.text.SimpleDateFormat;

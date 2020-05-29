@@ -19,7 +19,6 @@
         tools:context="com.example.admin.bibleapp.Activity.bibleContentSelect">
 
         <RelativeLayout
-
             android:id="@+id/activity_bible_content_select_swipe"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -35,6 +34,22 @@
                 android:layout_marginTop="0dp"
                 android:orientation="vertical">
 
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        app:cardBackgroundColor="@color/white"
+                        android:elevation="10dp">
+                    <TextView
+                        android:id="@+id/tv_old_testament"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Old Testament"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/largeTextSize"
+                        android:textStyle="normal" />
+                    </androidx.cardview.widget.CardView>
+
                 <GridView
                     android:id="@+id/grid_old_book"
                     android:layout_width="match_parent"
@@ -46,24 +61,8 @@
                     android:stretchMode="columnWidth"
                     android:visibility="visible" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="0dp"
-                    android:background="@color/colorPrimary">
 
-                    <TextView
-                        android:id="@+id/tv_old_testament"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:padding="5dp"
-                        android:text="Old Testament"
-                        android:textColor="@color/white"
-                        android:textSize="@dimen/largeTextSize"
-                        android:textStyle="normal" />
-                </LinearLayout>
-
-                <com.example.admin.bibleapp.MyGridView
+                <com.example.admin.bibleapp.Views.MyGridView
                     android:id="@+id/grid_chap"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -74,7 +73,7 @@
                     android:stretchMode="columnWidth"
                     android:visibility="gone" />
 
-                <com.example.admin.bibleapp.MyGridView
+                <com.example.admin.bibleapp.Views.MyGridView
                     android:id="@+id/grid_vers"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -93,6 +92,25 @@
                 android:layout_below="@+id/oldtest"
                 android:layout_marginTop="10dp"
                 android:orientation="vertical">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="5dp"
+                    app:cardBackgroundColor="@color/white"
+                    android:layout_marginTop="5dp"
+                    android:elevation="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_newtestament"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="New Testament"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/largeTextSize"
+                        android:textStyle="normal" />
+                </androidx.cardview.widget.CardView>
 
                 <GridView
                     android:id="@+id/grid_new_book"
@@ -103,24 +121,6 @@
                     android:numColumns="6"
                     android:padding="10dp"
                     android:stretchMode="columnWidth" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:background="@color/colorPrimary">
-
-                    <TextView
-                        android:id="@+id/tv_newtestament"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:padding="5dp"
-                        android:text="New Testament"
-                        android:textColor="@color/white"
-                        android:textSize="@dimen/largeTextSize"
-                        android:textStyle="normal" />
-                </LinearLayout>
-
 
             </LinearLayout>
 

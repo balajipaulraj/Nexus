@@ -5,7 +5,6 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -21,7 +20,7 @@ import com.example.admin.bibleapp.Model.user;
 import com.example.admin.bibleapp.R;
 import com.example.admin.bibleapp.Retrofit.APIClient;
 import com.example.admin.bibleapp.Retrofit.APIInterface;
-import com.example.admin.bibleapp.SideMenu;
+import com.example.admin.bibleapp.Retrofit.SideMenu;
 import com.example.admin.bibleapp.popupWindow.bibleselection;
 import com.google.gson.Gson;
 

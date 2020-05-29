@@ -1,17 +1,13 @@
 package com.example.admin.bibleapp.Activity;
 
 import androidx.annotation.IdRes;
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.slidingpanelayout.widget.SlidingPaneLayout;
-import androidx.viewpager.widget.ViewPager;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -27,26 +23,20 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.admin.bibleapp.Adapter.BannerAdapter;
 import com.example.admin.bibleapp.Adapter.DrawerItemCustomAdapter;
-import com.example.admin.bibleapp.Adapter.ExpandableRecyclerviewAdapter;
 import com.example.admin.bibleapp.Adapter.MediaAdapter;
 import com.example.admin.bibleapp.Database.DBhelper;
 import com.example.admin.bibleapp.Model.BannerModel;
 import com.example.admin.bibleapp.Model.Media;
-import com.example.admin.bibleapp.Model.MenuItems;
 import com.example.admin.bibleapp.Model.user;
 import com.example.admin.bibleapp.R;
 import com.example.admin.bibleapp.Retrofit.APIClient;
 import com.example.admin.bibleapp.Retrofit.APIInterface;
-import com.example.admin.bibleapp.SideMenu;
-import com.example.admin.bibleapp.Utills;
 import com.example.admin.bibleapp.popupWindow.popFlashcard;
 import com.example.admin.bibleapp.popupWindow.popReadHistory;
 import com.example.admin.bibleapp.popupWindow.pop_activity_about;
-import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.roughike.bottombar.BottomBar;
