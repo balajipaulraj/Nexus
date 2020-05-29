@@ -64,7 +64,7 @@
         app:elevation="8dp"
         app:layout_alignParentBottom="true"
         android:bb_behavior="iconsOnly"
-        android:bb_inActiveTabColor="@color/black"
+        android:bb_inActiveTabColor="@color/ash"
         android:bb_showShadow="true"
         android:bb_tabXmlResource="@xml/bottombar_tabs_five" />
 </RelativeLayout>
