@@ -6,6 +6,16 @@ public class Reg {
 
     @SerializedName("userId")
     int userId;
+    @SerializedName("msg")
+    String msg;
+
+    public void setMsg(String msg) {
+        this.msg = msg;
+    }
+
+    public String getMsg() {
+        return msg;
+    }
 
     public int getUserId() {
         return userId;

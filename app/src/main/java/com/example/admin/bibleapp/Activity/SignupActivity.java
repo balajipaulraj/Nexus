@@ -3,6 +3,7 @@ package com.example.admin.bibleapp.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -15,6 +16,9 @@ import com.example.admin.bibleapp.Model.Reg;
 import com.example.admin.bibleapp.R;
 import com.example.admin.bibleapp.Retrofit.APIClient;
 import com.example.admin.bibleapp.Retrofit.APIInterface;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.iid.InstanceIdResult;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -26,6 +30,7 @@ public class SignupActivity extends AppCompatActivity {
     private Button btnSignIn, btnSignUp, btnResetPassword;
     private ProgressBar progressBar;
     APIInterface apiInterface;
+    private String fcmnewToken;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +38,14 @@ public class SignupActivity extends AppCompatActivity {
         setContentView(R.layout.activity_signup);
 
         apiInterface = APIClient.getCacheEnabledRetrofit(this).create(APIInterface.class);
+        FirebaseInstanceId.getInstance().getInstanceId().addOnSuccessListener(SignupActivity.this, new OnSuccessListener<InstanceIdResult>() {
+            @Override
+            public void onSuccess(InstanceIdResult instanceIdResult) {
+                fcmnewToken = instanceIdResult.getToken();
+                Log.e("newToken", fcmnewToken);
+
+            }
+        });
 
         btnSignIn = (Button) findViewById(R.id.sign_in_button);
         btnSignUp = (Button) findViewById(R.id.sign_up_button);
@@ -81,17 +94,15 @@ public class SignupActivity extends AppCompatActivity {
                 } else if (password.length() < 6) {
                     Toast.makeText(getApplicationContext(), "Password too short, enter minimum 6 characters!", Toast.LENGTH_SHORT).show();
                 } else {
-                    Call<Reg> call = apiInterface.signup(email, password,firstname,lastname,phone);
+                    Call<Reg> call = apiInterface.signup(email, password, firstname, lastname, phone, fcmnewToken);
                     call.enqueue(new Callback<Reg>() {
                         @Override
                         public void onResponse(Call<Reg> call, Response<Reg> response) {
                             if (response.isSuccessful()) {
                                 progressBar.setVisibility(View.GONE);
-                                Toast.makeText(getApplicationContext(), "Signup successfull", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), (response.body() != null ? response.body().getMsg() : null) + "and You Userid" + response.body().getUserId(), Toast.LENGTH_SHORT).show();
                                 finish();
-                            }
-                            else
-                            {
+                            } else {
                                 progressBar.setVisibility(View.GONE);
                                 Toast.makeText(getApplicationContext(), "Incorrect Credentials", Toast.LENGTH_SHORT).show();
                             }

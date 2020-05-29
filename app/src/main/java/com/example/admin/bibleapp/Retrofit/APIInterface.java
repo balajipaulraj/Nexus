@@ -41,7 +41,7 @@ public interface APIInterface {
     @POST("/user/register")
     Call<Reg> signup(@Field("email") String email, @Field("password") String password,
                      @Field("firstname") String firstname, @Field("lastname") String lastname,
-                     @Field("phone") String phone);
+                     @Field("phone") String phone,@Field("deviceToken") String deviceToken);
 
     @FormUrlEncoded
     @PUT("/user/edit-profile")
