@@ -60,7 +60,7 @@ public class SplashScreen extends AppCompatActivity {
 //            String json = gson.toJson(user);
 //            date_store.putString("userdata", json);
             date_store.putBoolean("firsttime", false);
-            date_store.commit();
+            date_store.apply();
 
             startActivity(new Intent(SplashScreen.this, bibleselection.class));
             finish();
