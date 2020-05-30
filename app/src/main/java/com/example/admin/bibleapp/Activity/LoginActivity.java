@@ -1,5 +1,6 @@
 package com.example.admin.bibleapp.Activity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -75,7 +76,6 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 progressBar.setVisibility(View.VISIBLE);
                 String email = inputEmail.getText().toString();
                 final String password = inputPassword.getText().toString();
@@ -109,6 +109,7 @@ public class LoginActivity extends AppCompatActivity {
                                         startActivity(new Intent(LoginActivity.this, bibleselection.class));
                                         finish();
                                     } else {
+                                        progressBar.setVisibility(View.GONE);
                                         Toast.makeText(getApplicationContext(), "Incorrect Credentials", Toast.LENGTH_SHORT).show();
                                     }
                                 } else {
@@ -124,7 +125,6 @@ public class LoginActivity extends AppCompatActivity {
                         public void onFailure(Call<UserLogin> call, Throwable t) {
                             progressBar.setVisibility(View.GONE);
                             try {
-
                                 Toast.makeText(getApplicationContext(), "Incorrect Credentials", Toast.LENGTH_SHORT).show();
                                 call.cancel();
                             } catch (Exception e) {
