@@ -29,8 +29,6 @@
             android:weightSum="100">
 
 
-
-
             <TextView
                 android:id="@+id/textView1"
                 android:layout_width="match_parent"
@@ -38,6 +36,7 @@
                 android:layout_weight="50"
                 android:text="User Id: "
                 android:textStyle="bold" />
+
             <EditText
                 android:id="@+id/tv_userid"
                 android:layout_width="match_parent"
@@ -46,9 +45,9 @@
                 android:layout_weight="50"
                 android:background="@null"
                 android:enabled="false"
-                android:textSize="18sp"
+                android:text="text"
                 android:textColor="@color/black"
-                android:text="text" />
+                android:textSize="18sp" />
 
         </LinearLayout>
 
@@ -56,7 +55,6 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
 
 
             <TextView
@@ -66,6 +64,7 @@
                 android:layout_weight="1"
                 android:text="Gender: "
                 android:textStyle="bold" />
+
             <EditText
                 android:id="@+id/tv_gender"
                 android:layout_width="0dp"
@@ -73,16 +72,15 @@
                 android:layout_weight="1"
                 android:background="@null"
                 android:enabled="false"
-                android:textSize="18sp"
+                android:text="text"
 
                 android:textColor="@color/black"
-                android:text="text" />
+                android:textSize="18sp" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
 
 
             <TextView
@@ -92,6 +90,7 @@
                 android:layout_weight="1"
                 android:text="DOB: "
                 android:textStyle="bold" />
+
             <EditText
                 android:id="@+id/tv_dob"
                 android:layout_width="0dp"
@@ -100,10 +99,10 @@
                 android:layout_weight="1"
                 android:background="@null"
                 android:enabled="false"
-                android:textSize="18sp"
+                android:text="text"
 
                 android:textColor="@color/black"
-                android:text="text" />
+                android:textSize="18sp" />
 
 
         </LinearLayout>
@@ -111,7 +110,6 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
 
 
             <TextView
@@ -130,16 +128,15 @@
                 android:layout_weight="1"
                 android:background="@null"
                 android:enabled="false"
-                android:textSize="18sp"
+                android:text="text"
 
                 android:textColor="@color/black"
-                android:text="text" />
+                android:textSize="18sp" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
 
 
             <TextView
@@ -149,6 +146,7 @@
                 android:layout_weight="1"
                 android:text="Email: "
                 android:textStyle="bold" />
+
             <EditText
                 android:id="@+id/tv_email"
                 android:layout_width="0dp"
@@ -157,16 +155,15 @@
                 android:layout_weight="1"
                 android:background="@null"
                 android:enabled="false"
-                android:textSize="18sp"
+                android:text="text"
                 android:textColor="@color/black"
-                android:text="text" />
+                android:textSize="18sp" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
 
 
             <TextView
@@ -185,16 +182,15 @@
                 android:layout_weight="1"
                 android:background="@null"
                 android:enabled="false"
-                android:textSize="18sp"
+                android:text="text"
 
                 android:textColor="@color/black"
-                android:text="text" />
+                android:textSize="18sp" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
 
 
             <TextView
@@ -213,11 +209,26 @@
                 android:layout_weight="1"
                 android:background="@null"
                 android:enabled="false"
-                android:textSize="18sp"
+                android:text="text"
 
                 android:textColor="@color/black"
-                android:text="text" />
+                android:textSize="18sp" />
 
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone">
+
+
+          <Button
+              android:layout_width="150dp"
+              android:layout_height="wrap_content"
+              android:id="@+id/btn_submit_update"
+              android:text="Submit"/>
         </LinearLayout>
 
         <LinearLayout
@@ -227,12 +238,6 @@
             android:gravity="center">
 
 
-            <Button
-                android:id="@+id/sign_in_button"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:text="Signup Page"
-                android:textColor="@color/black" />
         </LinearLayout>
     </LinearLayout>
 
